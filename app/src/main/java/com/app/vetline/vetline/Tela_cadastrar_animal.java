@@ -13,5 +13,6 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastrar_animal);
+        getSupportActionBar().hide();
     }
 }

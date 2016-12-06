@@ -2,21 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:background="@drawable/veterinario2"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:weightSum="1"
-            android:baselineAligned="false"
-            android:background="@drawable/veterinario2">
+            >
 
             <ImageView
                 android:layout_width="match_parent"
@@ -31,8 +36,9 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
-                android:layout_width="375dp"
-                android:weightSum="1">
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:paddingRight="10dp">
 
                 <TextView
                     android:text="sintomas"
@@ -52,13 +58,13 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
                     android:inputType="textMultiLine"
                     android:ems="10"
-                    android:id="@+id/editText7"
+                    android:id="@+id/campo_sintomas"
                     android:background="@android:drawable/editbox_background"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="2.50" />
+                    android:layout_weight="2.50"
+                    android:layout_height="100dp" />
 
                 <TextView
                     android:text="serviços"
@@ -79,22 +85,26 @@
                 <CheckBox
                     android:text="Banho"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:id="@+id/check_banho"
                     android:layout_marginLeft="10dp"
                     android:button="@android:drawable/checkbox_off_background"
                     android:textColor="@android:color/holo_green_dark"
-                    android:background="@android:color/background_light" />
+                    android:background="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu" />
 
                 <CheckBox
                     android:text="Tosa"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:id="@+id/check_tosa"
                     android:layout_marginLeft="10dp"
                     android:button="@android:drawable/checkbox_off_background"
                     android:textColor="@android:color/holo_green_dark"
-                    android:background="@android:color/background_light" />
+                    android:background="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu" />
 
             </LinearLayout>
 
@@ -103,6 +113,16 @@
                 android:layout_height="wrap_content"
                 android:layout_width="375dp"
                 android:id="@+id/layoutVerificaVeterinario">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp"
+                android:paddingRight="10dp">
 
                 <TextView
                     android:text="Data"
@@ -118,34 +138,31 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:background="@android:color/holo_green_dark"
+                    android:layout_weight="9.07"
                     android:padding="5dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="375dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:weightSum="1"
-                android:layout_weight="0.36">
 
                 <TimePicker
                     android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:id="@+id/timePicker2"
+                    android:layout_height="335dp"
+                    android:id="@+id/campo_hora"
                     android:layout_marginLeft="10dp"
                     android:headerBackground="@android:color/holo_green_light"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:numbersSelectorColor="@android:color/holo_green_light"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="5dp" />
 
                 <DatePicker
-                    android:layout_width="match_parent"
-                    android:layout_height="99dp"
-                    android:id="@+id/datePicker2"
-                    android:layout_marginLeft="18dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/campo_data"
+                    android:layout_marginLeft="12dp"
                     android:animateLayoutChanges="true"
                     android:animationCache="true"
-                    android:headerBackground="@android:color/holo_green_light" />
+                    android:headerBackground="@android:color/holo_green_light"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/background_light"
+                    android:layout_marginBottom="5dp" />
 
                 <TextView
                     android:text="Pagamento"
@@ -167,23 +184,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:weightSum="1">
+                    android:weightSum="1"
+                    android:id="@+id/campo_pagamento">
 
                     <RadioButton
                         android:text="Cartão de Debito"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                        android:textColor="@android:color/holo_green_dark"
-                        android:button="@android:drawable/radiobutton_off_background"
-                        android:background="@android:color/background_light" />
-
-                    <RadioButton
-                        android:text="Cartão de Credito"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3"
+                        android:layout_height="40dp"
+                        android:id="@+id/op_cartao_debito"
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                         android:textColor="@android:color/holo_green_dark"
                         android:button="@android:drawable/radiobutton_off_background"
@@ -192,8 +200,8 @@
                     <RadioButton
                         android:text="Boleto"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2"
+                        android:layout_height="40dp"
+                        android:id="@+id/op_boleto"
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                         android:textColor="@android:color/holo_green_dark"
                         android:button="@android:drawable/radiobutton_off_background"
@@ -215,5 +223,5 @@
 
 
     </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>
