@@ -5,4 +5,9 @@ package controller;
  */
 
 public class CIndicarHospital {
+
+    public boolean FazerIndicaçãoHospital(String nome, String endereco, int num, String bairro, String cidade, String uf){
+
+        return false;
+    }
 }
