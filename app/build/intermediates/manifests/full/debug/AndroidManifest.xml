@@ -26,6 +26,7 @@
         <activity android:name="com.app.vetline.vetline.Tela_cadastrar_usuario" />
         <activity android:name="com.app.vetline.vetline.Tela_edicao_animal" />
         <activity android:name="com.app.vetline.vetline.Tela_pagina_principal" />
+        <activity android:name="com.app.vetline.vetline.Tela_redefinir_senha" />
     </application>
 
 </manifest>
