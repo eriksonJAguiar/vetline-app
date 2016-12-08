@@ -1,5 +1,6 @@
 package controller;
 
+import Dao.HospitalVeterinarioDAO;
 import model.HospitalVeterinario;
 
 /**
@@ -8,8 +9,13 @@ import model.HospitalVeterinario;
 
 public class CPesquisarHospital {
 
-    public HospitalVeterinario PesquisarHospital(String Nome, String numero){
+    HospitalVeterinarioDAO dao = new HospitalVeterinarioDAO();
+    HospitalVeterinario hv1 = new HospitalVeterinario();
 
-        return null;
+    public HospitalVeterinario PesquisarHospital(HospitalVeterinario hv){
+
+        hv1 = dao.buscar(hv);
+
+        return hv1;
     }
 }

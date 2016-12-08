@@ -1,5 +1,8 @@
 package controller;
 
+import Dao.ClienteDao;
+import Dao.UsuarioDAO;
+import model.Cliente;
 import model.Usuario;
 
 /**
@@ -8,12 +11,21 @@ import model.Usuario;
 
 public class CRedefinirSenha {
 
-    public Usuario buscaUsuario(String login){
+    UsuarioDAO dao = new UsuarioDAO();
+    Usuario a1 = new Usuario();
 
-        return null;
+    public Usuario buscaUsuario(Usuario a){
+
+        a1 = dao.buscar(a);
+
+        return a1;
     }
 
-    public boolean novaSenha(String senha){
+    public boolean novaSenha(Usuario a2, String novaSenha){
+
+        a2.setSenha(novaSenha);
+
+        dao.atualizar(a2);
 
         return false;
     }

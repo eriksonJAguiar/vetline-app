@@ -1,5 +1,6 @@
 package controller;
 
+import Dao.ConsultaDAO;
 import model.Consulta;
 
 /**
@@ -8,7 +9,11 @@ import model.Consulta;
 
 public class CClassificarConsulta {
 
-    public boolean ClassificaConsulta(Consulta c, int val) { // conectar com o banco para cadatrar um novo animal
+    ConsultaDAO dao = new ConsultaDAO();
+
+    public boolean ClassificaConsulta(Consulta c) { // conectar com o banco para atualizar a classificação da consulta
+
+        dao.atualizar(c);
 
         return false;
     }

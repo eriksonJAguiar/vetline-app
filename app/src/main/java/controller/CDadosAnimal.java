@@ -1,5 +1,6 @@
 package controller;
 
+import Dao.AnimalDAO;
 import model.Animal;
 import model.Cliente;
 
@@ -9,11 +10,15 @@ import model.Cliente;
 
 public class CDadosAnimal {
 
+    AnimalDAO dao = new AnimalDAO();
+
     public Animal carregaDados(Animal a, Cliente c){ //busca no banco os dados do animal
         return null;
     }
 
     public boolean editaDadosAnimal(Animal a){ // atualiza no banco os dados do animal
+
+        dao.atualizar(a);
 
         return false;
     }

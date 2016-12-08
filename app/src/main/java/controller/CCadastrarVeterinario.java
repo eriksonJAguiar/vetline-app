@@ -1,5 +1,6 @@
 package controller;
 
+import Dao.VeterinarioDAO;
 import model.Veterinario;
 
 /**
@@ -7,8 +8,13 @@ import model.Veterinario;
  */
 
 public class CCadastrarVeterinario {
-    public boolean cadastrarVeterinario(Veterinario vet){
-        return true;
 
+    VeterinarioDAO dao = new VeterinarioDAO();
+
+    public boolean cadastrarVeterinario(Veterinario vet){
+
+        dao.inserir(vet);
+
+        return true;
     }
 }
