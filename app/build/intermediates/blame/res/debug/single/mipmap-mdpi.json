@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

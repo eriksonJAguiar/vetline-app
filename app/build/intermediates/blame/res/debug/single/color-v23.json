@@ -1,74 +1,110 @@
 [
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_switch_track.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_edittext.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_spinner.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_default.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_switch_thumb.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_seek_thumb.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_track.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_spinner.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_edittext.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_default.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_btn_checkable.xml"
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\color-v23\\abc_tint_switch_track.xml"
     }
 ]
