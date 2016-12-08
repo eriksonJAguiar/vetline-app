@@ -20,12 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Button btn_cadastrar_consulta1 = (Button) findViewById(R.id.btn_cadastrar_consulta);
         Button btn_cadastrar_usuario1 = (Button) findViewById(R.id.btn_cadastrar_usuario);
         Button btn_edicao_animal = (Button) findViewById(R.id.btn_edicao_animal);
+        Button btn_redefinir_senha1 = (Button) findViewById(R.id.btn_redefinir_senha);
 
         final Intent pagina_principal = new Intent(this, Tela_pagina_principal.class);
         final Intent cadastrar_animal1 = new Intent(this, Tela_cadastrar_animal.class);
         final Intent cadastrar_consulta1 = new Intent(this, Tela_cadastrar_consulta.class);
         final Intent cadastrar_usuario1 = new Intent(this, Tela_cadastrar_usuario.class);
         final Intent edicao_animal = new Intent(this, Tela_edicao_animal.class);
+        final Intent redefinir_senha = new Intent(this, Tela_redefinir_senha.class);
 
 
         btn_pagina_principal1.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(cadastrar_usuario1);
+            }
+        });
+        btn_redefinir_senha1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(redefinir_senha);
             }
         });
 

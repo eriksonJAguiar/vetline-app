@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:baselineAligned="false"
-    android:background="@drawable/veterinario2"
+    android:background="@drawable/veterinario"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 

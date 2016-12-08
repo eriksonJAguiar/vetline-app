@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import controller.CCadastrarVeterinario;
 import model.Cliente;
 import model.Veterinario;
 import controller.CCadastrarCliente;
@@ -90,62 +91,145 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
 
                 String crmv;
                 if(mudarOP.isChecked()){
-                    crmv = findViewById(R.id.campo_crmv).toString();
-                    vet = new Veterinario().getInstance();
-                    vet.setEmail(email);
-                    vet.setNome(nome_completo);
-                    vet.setTelefone(telefone);
-                    vet.setLogin(usuario);
-                    vet.setSenha(senha);
-                    vet.setCrmv(crmv);
+                    try {
+                        crmv = findViewById(R.id.campo_crmv).toString();
+                        vet = new Veterinario().getInstance();
+                        vet.setEmail(email);
+                        if (vet.getEmail().isEmpty()) {
+                            throw new Exception("Email vazio!");
+                        }
+                        vet.setNome(nome_completo);
+                        if (vet.getNome().isEmpty()) {
+                            throw new Exception("Nome Completo vazio!");
+                        }
+                        vet.setTelefone(telefone);
+                        if (vet.getTelefone().isEmpty()) {
+                            throw new Exception("Telefone vazio!");
+                        }
+                        vet.setLogin(usuario);
+                        if (vet.getLogin().isEmpty()) {
+                            throw new Exception("Usuario vazio!");
+                        }
+                        vet.setSenha(senha);
+                        if (vet.getSenha().isEmpty()) {
+                            throw new Exception("Senha vazia!");
+                        }
+                        vet.setCrmv(crmv);
+                        if (vet.getCrmv().isEmpty()) {
+                            throw new Exception("CRMV vazio!");
+                        }
+                        CCadastrarVeterinario CCadastrarVeterinario = new CCadastrarVeterinario();
+                        if (CCadastrarVeterinario.cadastrarVeterinario(vet)) {
+                            final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                            camposVet2.setVisibility(View.VISIBLE);
+                            camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
+                            camposVet2.setMinimumHeight(210);
+                            TextView msg = (TextView) findViewById(R.id.msg);
+                            msg.setTextColor(Color.parseColor("#3c763d"));
+                            msg.setText("SUCESSO: Veterinario cadastrado com sucesso");
 
-
-                }else{
-                    user = new Cliente().getInstance();
-                    user.setEmail(email);
-                    user.setNome(nome_completo);
-                    user.setTelefone(telefone);
-                    user.setLogin(usuario);
-                    user.setSenha(senha);
-                    CCadastrarCliente CCadastrarCliente = new CCadastrarCliente();
-                    if(CCadastrarCliente.cadastrarCliente(user)){
-                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
-                        camposVet2.setVisibility(View.VISIBLE);
-                        camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
-                        camposVet2.setMinimumHeight(210);
-                        TextView msg = (TextView) findViewById(R.id.msg);
-                        msg.setTextColor(Color.parseColor("#3c763d"));
-                        msg.setText("SUCESSO: Cadastrado com sucesso");
-
-                        final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
-                        final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
-                        ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
-                        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                            @Override
-                            public void onAnimationUpdate(ValueAnimator valueAnimator)
-                            {
-                                params.topMargin = (Integer) valueAnimator.getAnimatedValue();
-                                animatedView2.requestLayout();
-                            }
-                        });
-                        animator.setDuration(300);
-                        animator.start();
-                    }else{
+                            final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
+                            final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
+                            ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
+                            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                                @Override
+                                public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                                    params.topMargin = (Integer) valueAnimator.getAnimatedValue();
+                                    animatedView2.requestLayout();
+                                }
+                            });
+                            animator.setDuration(300);
+                            animator.start();
+                        } else {
+                                throw new Exception("Nao e possivel cadastrar");
+                        }
+                    }catch (Exception e){
                         final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
                         camposVet2.setVisibility(View.VISIBLE);
                         camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
                         camposVet2.setMinimumHeight(210);
                         TextView msg = (TextView) findViewById(R.id.msg);
                         msg.setTextColor(Color.parseColor("#a94442"));
-                        msg.setText("ERROR: Nao foi possivel cadastrar");
+                        msg.setText("ERROR: "+e.getMessage());
 
                         final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
                         final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
                         ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
                         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                             @Override
-                            public void onAnimationUpdate(ValueAnimator valueAnimator)
-                            {
+                            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                                params.topMargin = (Integer) valueAnimator.getAnimatedValue();
+                                animatedView2.requestLayout();
+                            }
+                        });
+                        animator.setDuration(300);
+                        animator.start();
+                    }
+
+                }else{
+                    try {
+                        user = new Cliente().getInstance();
+                        user.setEmail(email);
+                        if (user.getEmail().isEmpty()) {
+                            throw new Exception("Email vazio!");
+                        }
+                        user.setNome(nome_completo);
+                        if (user.getNome().isEmpty()) {
+                            throw new Exception("Nome vazio!");
+                        }
+                        user.setTelefone(telefone);
+                        if (user.getTelefone().isEmpty()) {
+                            throw new Exception("Telefone vazio!");
+                        }
+                        user.setLogin(usuario);
+                        if (user.getLogin().isEmpty()) {
+                            throw new Exception("Usuario vazio!");
+                        }
+                        user.setSenha(senha);
+                        if (user.getSenha().isEmpty()) {
+                            throw new Exception("Senha vazio!");
+                        }
+                        CCadastrarCliente CCadastrarCliente = new CCadastrarCliente();
+                        if (CCadastrarCliente.cadastrarCliente(user)) {
+                            final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                            camposVet2.setVisibility(View.VISIBLE);
+                            camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
+                            camposVet2.setMinimumHeight(210);
+                            TextView msg = (TextView) findViewById(R.id.msg);
+                            msg.setTextColor(Color.parseColor("#3c763d"));
+                            msg.setText("SUCESSO: Cadastrado com sucesso");
+
+                            final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
+                            final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
+                            ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
+                            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                                @Override
+                                public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                                    params.topMargin = (Integer) valueAnimator.getAnimatedValue();
+                                    animatedView2.requestLayout();
+                                }
+                            });
+                            animator.setDuration(300);
+                            animator.start();
+                        } else {
+                            throw new Exception("Mao e possivel cadastrar");
+                        }
+
+                    }catch (Exception e){
+                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                        camposVet2.setVisibility(View.VISIBLE);
+                        camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
+                        camposVet2.setMinimumHeight(210);
+                        TextView msg = (TextView) findViewById(R.id.msg);
+                        msg.setTextColor(Color.parseColor("#a94442"));
+                        msg.setText("ERROR: "+e.getMessage());
+
+                        final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
+                        final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
+                        ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
+                        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                            @Override
+                            public void onAnimationUpdate(ValueAnimator valueAnimator) {
                                 params.topMargin = (Integer) valueAnimator.getAnimatedValue();
                                 animatedView2.requestLayout();
                             }

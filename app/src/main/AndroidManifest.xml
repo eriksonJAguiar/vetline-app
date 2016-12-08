@@ -20,6 +20,7 @@
         <activity android:name=".Tela_cadastrar_usuario"></activity>
         <activity android:name=".Tela_edicao_animal"></activity>
         <activity android:name=".Tela_pagina_principal"></activity>
+        <activity android:name=".Tela_redefinir_senha"></activity>
     </application>
 
 </manifest>
