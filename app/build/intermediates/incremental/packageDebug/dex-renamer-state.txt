@@ -1,7 +1,7 @@
-#Wed Dec 07 14:09:09 BRST 2016
-base.0=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_12ed1fabf61caca9db5969b46461acf40cd1218c
+#Fri Dec 09 16:16:11 BRST 2016
+base.0=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_a68a71865232b0b0ff976ef7579d06fee4f8a932\\classes.dex
-base.1=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_a68a71865232b0b0ff976ef7579d06fee4f8a932
-file.0=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_12ed1fabf61caca9db5969b46461acf40cd1218c\\classes.dex
+file.1=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+base.1=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+file.0=C\:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes2.dex

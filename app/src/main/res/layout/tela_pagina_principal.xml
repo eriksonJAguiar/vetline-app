@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/veterinario">
+    android:background="@drawable/veterinariods">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -159,7 +159,7 @@
 
                 <Button
                     android:text="agenda"
-                    android:layout_width="362dp"
+                    android:layout_width="match_parent"
                     android:id="@+id/btn_agenda"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="14sp"

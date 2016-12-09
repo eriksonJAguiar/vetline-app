@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:baselineAligned="false"
-    android:background="@drawable/veterinario"
+    android:background="@drawable/veterinariods"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -152,7 +152,8 @@
                     android:layout_marginTop="5dp"
                     android:numbersSelectorColor="@android:color/holo_green_light"
                     android:layout_weight="0.09"
-                    android:layout_marginBottom="5dp" />
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/common_google_signin_btn_text_light_disabled" />
 
                 <DatePicker
                     android:layout_height="wrap_content"
@@ -253,10 +254,10 @@
             </LinearLayout>
 
             <Button
-                android:text="Cadastrar"
+                android:text="Proximo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_cadastar"
+                android:id="@+id/btn_proximo"
                 android:layout_weight="0.02"
                 android:background="@android:color/holo_green_dark"
                 android:textColor="@android:color/background_light" />

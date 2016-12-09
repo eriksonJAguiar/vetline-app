@@ -5,7 +5,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/veterinario">
+    android:background="@drawable/veterinariods">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:paddingRight="10dp"
-            android:layout_height="367dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:text="Selecionar Imagem"
@@ -52,20 +52,29 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp" />
 
-            <ImageButton
-                app:srcCompat="@drawable/sem_imagem"
-                android:id="@+id/btn_image"
-                android:padding="5dp"
-                android:layout_width="500dp"
-                style="@android:style/Widget.ImageButton"
-                android:scaleType="fitEnd"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
                 android:layout_below="@+id/textView"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:paddingTop="5dp"
-                android:background="@android:color/holo_green_light"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentStart="true">
+                <ImageButton
+                    android:background="@drawable/nova_foto11"
+                    android:id="@+id/btn_image"
+                    android:padding="5dp"
+                    style="@android:style/Widget.ImageButton"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent"
+                    android:foregroundGravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -73,7 +82,8 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:paddingRight="10dp">
+            android:paddingRight="10dp"
+            android:id="@+id/layout_primeiro">
 
             <TextView
                 android:text="Dados Pessoais"
@@ -118,8 +128,7 @@
                 android:id="@+id/campo_veterinario"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                 android:layout_marginLeft="14dp"
-                android:textColor="@android:color/background_light"
-                tools:textColor="@android:color/background_light"
+                android:textColor="?android:attr/textColorAlertDialogListItem"
                 android:layout_height="wrap_content"
                 android:textColorLink="@android:color/holo_green_dark"
                 android:textColorHint="@android:color/holo_green_dark"
@@ -398,7 +407,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_cadastar"
             android:layout_weight="0.02"
-            android:background="@android:color/holo_green_dark" />
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/background_light" />
 
     </LinearLayout>
     </ScrollView>

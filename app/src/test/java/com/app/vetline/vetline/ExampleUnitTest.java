@@ -1,8 +1,5 @@
 package com.app.vetline.vetline;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -15,12 +12,6 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-
-    }
-    public void grava_bd(){
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Primeiro Registro Gravado no Firebase");
+        assertEquals(4, 2 + 2);
     }
 }
