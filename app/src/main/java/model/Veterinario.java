@@ -12,6 +12,13 @@ public class Veterinario extends Usuario  {
     private int numConta;
     private int agencia;
 
+    public Veterinario(){
+        nome = "";
+        crmv = 0;
+        especialidade = "";
+        numConta = 0;
+        agencia = 0;
+    }
 
     public String getNome() {
         return nome;

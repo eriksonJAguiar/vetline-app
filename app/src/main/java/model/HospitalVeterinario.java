@@ -14,6 +14,15 @@ public class HospitalVeterinario {
     private String cidade;
     private String uf;
 
+    public HospitalVeterinario(){
+        nome = "";
+        crmv = 0;
+        classificacao = 0;
+        numero = 0;
+        bairro = "";
+        cidade = "";
+        uf = "";
+    }
 
     public String getNome() {
         return nome;

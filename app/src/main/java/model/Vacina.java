@@ -13,6 +13,10 @@ public class Vacina {
     private String descricao;
     private Date validaAte;
 
+    public Vacina(){
+        vacina = "";
+        descricao = "";
+    }
 
     public String getVacina() {
         return vacina;

@@ -11,6 +11,9 @@ public class AnimalVacina {
     private int numPedigree;
     private Date data;
 
+    public AnimalVacina(){
+        numPedigree = 0;
+    }
 
     public int getNumPedigree() {
         return numPedigree;

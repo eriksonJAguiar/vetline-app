@@ -15,6 +15,15 @@ public class Consulta {
     private boolean status;
     private int classificacao;
 
+    public Consulta(){
+        descricao = "";
+        local = "";
+        preco = 0.0;
+        diagnostico = "";
+        status = false;
+        classificacao = 0;
+    }
+
 
     public Date getDataconsulta() {
         return dataconsulta;

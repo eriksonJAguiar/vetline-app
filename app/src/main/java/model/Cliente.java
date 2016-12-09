@@ -14,12 +14,19 @@ public class Cliente extends Usuario {
     private String cidade;
     private String uf;
 
-
+    public Cliente(){
+        nome = "";
+        cpf = 0;
+        endereco = "";
+        bairro = "";
+        num = 0;
+        cidade = "";
+        uf = "";
+    }
 
     public String getNome() {
         return nome;
     }
-
 
     public void setNome(String nome) {
         this.nome = nome;

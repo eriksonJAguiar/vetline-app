@@ -8,6 +8,11 @@ public class Alergia {
     private String alergia;
     private String descricao;
 
+    public Alergia(){
+        alergia = "";
+        descricao = "";
+    }
+
 
     public String getAlergia() {
         return alergia;

@@ -12,6 +12,14 @@ public class Animal {
     private String tamanho ;
     private String genero;
 
+    public Animal(){
+        nome = "";
+        pedigree = 0;
+        raca = "";
+        tamanho = "";
+        genero = "";
+    }
+
 
     public String getNome() {
         return nome;

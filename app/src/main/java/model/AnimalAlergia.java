@@ -11,6 +11,11 @@ public class AnimalAlergia {
     private String alergia;
     private int numPedigree;
 
+    public AnimalAlergia(){
+        alergia = "";
+        numPedigree = 0;
+    }
+
 
     public String getAlergia() {
         return alergia;

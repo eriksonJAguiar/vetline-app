@@ -10,6 +10,12 @@ public class CartaoCredito {
     private String bandeira;
     private String numero;
 
+    public CartaoCredito(){
+        nomeTitular = "";
+        bandeira = "";
+        numero = "";
+    }
+
 
     public String getNomeTitular() {
         return nomeTitular;

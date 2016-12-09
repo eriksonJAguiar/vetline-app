@@ -11,10 +11,9 @@ public class Usuario {
 
     private static Usuario novo = null;
 
-    public Usuario(){}
-    public Usuario(String nome, String email, String telefone, String usuario, String senha){
-        this.login = usuario;
-        this.senha = senha;
+    public Usuario(){
+        login = "";
+        senha = "";
     }
 
     public Usuario getInstance(){

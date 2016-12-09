@@ -11,6 +11,9 @@ public class ItemConsulta {
     private Date dataConsulta;
     private double preco;
 
+    public ItemConsulta(){
+        preco = 0.0;
+    }
 
     public Date getDataConsulta() {
         return dataConsulta;
