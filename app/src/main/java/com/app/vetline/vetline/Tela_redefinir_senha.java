@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import controller.CRedefinirSenha;
+import model.Usuario;
 
 /**
  * Created by ProBook on 07/12/2016.
@@ -31,7 +32,11 @@ public class Tela_redefinir_senha extends AppCompatActivity {
                 try{
                     String valor = findViewById(R.id.campo).toString();
                     CRedefinirSenha CRedefinirSenha = new CRedefinirSenha();
-                    CRedefinirSenha.buscaUsuario(valor);
+
+                    Usuario a = new Usuario();
+                    a.setSenha(valor);
+
+                    CRedefinirSenha.buscaUsuario(a);
 
                     throw new Exception("ASDSAD");
 

@@ -14,5 +14,8 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastrar_consulta);
         getSupportActionBar().hide();
+
+
+
     }
 }
