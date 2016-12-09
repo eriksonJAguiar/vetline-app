@@ -13,9 +13,8 @@ import model.Veterinario;
 public class CcancelarConsulta {
 
     ConsultaDAO dao = new ConsultaDAO();
-    VeterinarioDAO dao2 = new VeterinarioDAO();
 
-    public boolean CancelarConsulta(Veterinario v, Consulta c){
+    public boolean CancelarConsulta(Consulta c){
 
         dao.buscar(c);
 
