@@ -102,7 +102,7 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_nome"
+            android:id="@+id/campo_usuario"
             android:layout_marginLeft="10dp"
             android:hint="Nome"
             android:background="@android:drawable/editbox_background"
@@ -112,19 +112,33 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_idade"
+            android:id="@+id/campo_num_pedigree"
             android:layout_marginLeft="10dp"
-            android:hint="Idade"
+            android:hint="Numero de Pedigree"
             android:background="@android:drawable/editbox_background"
             android:layout_height="50dp" />
 
-        <EditText
+                <TextView
+                    android:text="Porte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="normal|bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@android:color/holo_green_dark" />
+
+                <Spinner
             android:layout_width="match_parent"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/campo_peso"
+                    android:ems="10"
+            android:id="@+id/campo_tamanho"
             android:layout_marginLeft="10dp"
-            android:hint="Peso"
+            android:hint="Tamanho"
             android:layout_weight="0.02"
             android:background="@android:drawable/editbox_background"
             android:layout_height="50dp" />
@@ -153,14 +167,14 @@
                     android:background="@android:color/holo_green_dark"
                     android:padding="5dp" />
 
-                <EditText
+                <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textPersonName"
                     android:ems="10"
-                    android:id="@+id/campo_tipo"
+                    android:id="@+id/campo_genero"
                     android:layout_marginLeft="10dp"
-                    android:hint="Tipo Animal"
+                    android:hint="Genero"
                     android:background="@android:drawable/editbox_background" />
 
                 <EditText

@@ -1,122 +1,162 @@
 [
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\root\\AndroidStudioProjects\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/D:\\Documentos\\github\\vet\\vetline-app\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/anim/abc_popup_exit.xml"
     }
 ]

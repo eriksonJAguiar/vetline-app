@@ -45,7 +45,6 @@
 
                 <TextView
                     android:text="tipo de perfil:"
-                    android:layout_height="30dp"
                     android:id="@+id/view_tipo_perfil"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
@@ -60,10 +59,11 @@
                     android:layout_below="@+id/view_nome"
                     android:layout_alignLeft="@+id/view_nome"
                     android:layout_alignStart="@+id/view_nome"
-                    android:layout_marginTop="3dp" />
+                    android:layout_marginTop="3dp"
+                    android:layout_height="40dp" />
 
                 <TextView
-                    android:text="Selecionar Imagem"
+                    android:text="perfil"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
@@ -78,26 +78,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
-
-                <TextView
-                    android:text="Nome:"
-                    android:id="@+id/view_nome"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:background="@android:color/white"
-                    android:padding="5dp"
-                    android:layout_marginLeft="14dp"
-                    android:layout_marginStart="14dp"
-                    android:layout_width="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/btn_image"
-                    android:layout_toEndOf="@+id/btn_image"
-                    android:layout_height="30dp" />
 
                 <ImageView
                     app:srcCompat="@drawable/sem_imagem"
@@ -121,6 +101,27 @@
                     android:layout_alignBottom="@+id/view_tipo_perfil"
                     android:layout_alignRight="@+id/btn_image"
                     android:layout_alignEnd="@+id/btn_image" />
+
+                <TextView
+                    android:text="Nome:"
+                    android:id="@+id/view_nome"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/btn_image"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/btn_image"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
 
             </RelativeLayout>
 
@@ -159,25 +160,9 @@
                 android:layout_alignStart="@+id/textView16">
 
                 <Button
-                    android:text="consultas"
-                    android:layout_width="363dp"
-                    android:id="@+id/btn_op_consulta"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@android:color/white"
-                    android:padding="5dp"
-                    android:layout_height="30dp" />
-
-                <Button
                     android:text="agenda"
                     android:layout_width="match_parent"
-                    android:id="@+id/btn_op_agenda"
+                    android:id="@+id/btn_agenda"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="14sp"
                     android:textColor="@android:color/holo_green_dark"
@@ -188,12 +173,12 @@
                     android:layout_marginTop="2dp"
                     android:background="@android:color/white"
                     android:padding="5dp"
-                    android:layout_height="30dp" />
+                    android:layout_height="wrap_content" />
 
                 <Button
                     android:text="clinicas"
                     android:layout_width="match_parent"
-                    android:id="@+id/btn_op_clinica"
+                    android:id="@+id/btn_clinica"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="14sp"
                     android:textColor="@android:color/holo_green_dark"
@@ -204,12 +189,53 @@
                     android:layout_marginTop="2dp"
                     android:background="@android:color/white"
                     android:padding="5dp"
-                    android:layout_height="30dp" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="54dp">
 
+            <TextView
+                android:text="cadastrar animais"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textSize="10sp"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="normal|bold"
+                android:textAlignment="viewStart"
+                android:fontFamily="sans-serif-medium"
+                android:background="@android:color/holo_green_dark"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="cadastrar Animais"
+                android:id="@+id/btn_adicionar"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="normal|bold"
+                android:fontFamily="sans-serif-medium"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textView12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -264,11 +290,11 @@
                         android:background="@android:color/white"
                         android:padding="5dp"
                         android:textAlignment="viewStart"
-                        android:layout_height="30dp" />
+                        android:layout_height="40dp" />
 
                     <ImageButton
                         app:srcCompat="@android:drawable/ic_menu_edit"
-                        android:id="@+id/imageButton"
+                        android:id="@+id/btn_animal_editar"
                         android:layout_height="20dp"
                         android:layout_width="20dp"
                         android:elevation="3dp"
@@ -304,7 +330,7 @@
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="30dp" />
+                        android:layout_height="wrap_content" />
 
                     <Button
                         android:text="vacinas"
@@ -320,12 +346,12 @@
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="30dp" />
+                        android:layout_height="wrap_content" />
 
                     <Button
-                        android:text="serviços"
+                        android:text="alergias"
                         android:layout_width="match_parent"
-                        android:id="@+id/btn_animal_servicos"
+                        android:id="@+id/btn_animal_alergias"
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                         android:textSize="14sp"
                         android:textColor="@android:color/background_light"
@@ -336,7 +362,7 @@
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="30dp" />
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
             </LinearLayout>
