@@ -1,11 +1,13 @@
 package com.app.vetline.vetline;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 /**
  * Created by ProBook on 06/12/2016.
@@ -81,6 +83,48 @@ public class Tela_pagina_principal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(tela_animal_alergias);
+            }
+        });
+        Button btn_animal_id1 = (Button) findViewById(R.id.btn_animal_id);
+        btn_animal_id1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final LinearLayout animal_id_show = (LinearLayout) findViewById(R.id.layout_op_animal_id);
+                if(animal_id_show.getVisibility() == View.INVISIBLE) {
+                    animal_id_show.setVisibility(View.VISIBLE);
+
+
+                    final View animatedView = (View) findViewById(R.id.layout_op_animal_id);
+                    final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView.getLayoutParams();
+                    ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
+                    animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                        @Override
+                        public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                            params.topMargin = (Integer) valueAnimator.getAnimatedValue();
+                            animatedView.requestLayout();
+                        }
+                    });
+                    animator.setDuration(300);
+                    animator.start();
+                }else{
+                    animal_id_show.setVisibility(View.INVISIBLE);
+
+
+                    final View animatedView = (View) findViewById(R.id.layout_op_animal_id);
+                    final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView.getLayoutParams();
+                    ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
+                    animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                        @Override
+                        public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                            params.topMargin = (Integer) valueAnimator.getAnimatedValue();
+                            animatedView.requestLayout();
+                        }
+                    });
+                    animator.setDuration(300);
+                    animator.start();
+
+                }
             }
         });
     }

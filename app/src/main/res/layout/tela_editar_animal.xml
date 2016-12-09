@@ -188,7 +188,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_editar"
         android:layout_weight="0.02"
-        android:background="@android:color/holo_green_dark" />
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:text="Resetar"
@@ -196,7 +197,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_resetar"
         android:layout_weight="0.02"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/background_light" />
 
         <Button
             android:text="Apagar"
@@ -204,7 +206,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_apagar"
             android:layout_weight="0.02"
-            android:background="@android:color/holo_red_light" />
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/background_light" />
     </LinearLayout>
     </ScrollView>
 </LinearLayout>

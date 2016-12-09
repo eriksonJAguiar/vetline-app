@@ -21,34 +21,37 @@
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:text="Dados Cliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                    android:textSize="10sp"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:padding="5dp"
-                    android:background="@android:color/holo_green_dark" />
+                android:paddingRight="10dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/campo"
-                    android:layout_marginLeft="10dp"
                     android:hint="Usuario"
                     android:background="@android:drawable/editbox_background"
                     android:layout_weight="0.05"
                     android:layout_height="45dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.05">
+                <Button
+                    android:text="Redefinir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_recuperar"
+                    android:layout_weight="0.02"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginTop="5dp" />
+
+                </LinearLayout>
 
             </LinearLayout>
             <LinearLayout
@@ -81,22 +84,6 @@
                     android:textAlignment="center"
                     android:textColor="#3c763d" />
             </LinearLayout>
-            <Button
-                android:text="Redefinir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_recuperar"
-                android:layout_weight="0.02"
-                android:background="@android:color/holo_green_dark"
-                android:layout_marginTop="10dp" />
-
-            <Button
-                android:text="Resetar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_resetar"
-                android:layout_weight="0.02"
-                android:background="@android:color/darker_gray" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

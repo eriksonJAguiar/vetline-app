@@ -11,7 +11,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:orientation="vertical"
@@ -33,7 +33,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="155dp"
             android:weightSum="1">
 
             <RelativeLayout
@@ -41,26 +41,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:paddingRight="10dp"
-                android:layout_height="120dp">
-
-                <TextView
-                    android:text="tipo de perfil:"
-                    android:id="@+id/view_tipo_perfil"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:background="@android:color/white"
-                    android:padding="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_below="@+id/view_nome"
-                    android:layout_alignLeft="@+id/view_nome"
-                    android:layout_alignStart="@+id/view_nome"
-                    android:layout_marginTop="3dp"
-                    android:layout_height="40dp" />
+                android:layout_height="171dp">
 
                 <TextView
                     android:text="perfil"
@@ -78,29 +59,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
-
-                <ImageView
-                    app:srcCompat="@drawable/sem_imagem"
-                    android:id="@+id/btn_image"
-                    android:padding="5dp"
-                    android:background="@android:color/holo_green_dark"
-                    android:layout_height="95dp"
-                    android:layout_width="95dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <ImageButton
-                    app:srcCompat="@android:drawable/ic_menu_edit"
-                    android:id="@+id/btn_editar_perfil"
-                    android:layout_height="20dp"
-                    android:layout_width="20dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:elevation="1dp"
-                    android:layout_alignBottom="@+id/view_tipo_perfil"
-                    android:layout_alignRight="@+id/btn_image"
-                    android:layout_alignEnd="@+id/btn_image" />
 
                 <TextView
                     android:text="Nome:"
@@ -120,8 +78,48 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/btn_image"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    app:srcCompat="@drawable/sem_imagem"
+                    android:id="@+id/btn_image"
+                    android:padding="5dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:text="tipo de perfil:"
+                    android:id="@+id/view_tipo_perfil"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/view_nome"
+                    android:layout_alignLeft="@+id/view_nome"
+                    android:layout_alignStart="@+id/view_nome" />
+
+                <ImageButton
+                    android:id="@+id/btn_editar_perfil"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:elevation="1dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:layout_alignBottom="@+id/btn_image"
+                    android:layout_alignRight="@+id/btn_image"
+                    android:layout_alignEnd="@+id/btn_image" />
 
             </RelativeLayout>
 
@@ -161,7 +159,7 @@
 
                 <Button
                     android:text="agenda"
-                    android:layout_width="match_parent"
+                    android:layout_width="362dp"
                     android:id="@+id/btn_agenda"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="14sp"
@@ -169,11 +167,10 @@
                     android:textStyle="normal|bold"
                     android:textAlignment="viewStart"
                     android:fontFamily="sans-serif-medium"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
                     android:background="@android:color/white"
                     android:padding="5dp"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="36dp" />
 
                 <Button
                     android:text="clinicas"
@@ -185,15 +182,15 @@
                     android:textStyle="normal|bold"
                     android:textAlignment="viewStart"
                     android:fontFamily="sans-serif-medium"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
                     android:background="@android:color/white"
                     android:padding="5dp"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="36dp" />
 
             </LinearLayout>
 
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
@@ -213,15 +210,11 @@
                 android:fontFamily="sans-serif-medium"
                 android:background="@android:color/holo_green_dark"
                 android:padding="5dp"
-                android:layout_width="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_width="match_parent" />
 
             <Button
                 android:text="cadastrar Animais"
                 android:id="@+id/btn_adicionar"
-                android:layout_weight="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                 android:textSize="18sp"
                 android:textColor="@android:color/holo_green_light"
@@ -230,10 +223,11 @@
                 android:background="@android:color/white"
                 android:padding="5dp"
                 android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:layout_below="@+id/textView12"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_height="40dp" />
+                android:gravity="center_vertical" />
 
         </RelativeLayout>
         <LinearLayout
@@ -285,24 +279,25 @@
                         android:textColor="@android:color/holo_green_dark"
                         android:textStyle="normal|bold"
                         android:fontFamily="sans-serif-medium"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:background="@android:color/white"
                         android:padding="5dp"
                         android:textAlignment="viewStart"
-                        android:layout_height="40dp" />
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true" />
 
                     <ImageButton
                         app:srcCompat="@android:drawable/ic_menu_edit"
                         android:id="@+id/btn_animal_editar"
-                        android:layout_height="20dp"
-                        android:layout_width="20dp"
                         android:elevation="3dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginEnd="10dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:drawable/ic_menu_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
 
 
                 </RelativeLayout>
@@ -313,8 +308,9 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="120dp"
+                    android:id="@+id/layout_op_animal_id"
+                    android:visibility="invisible">
 
                     <Button
                         android:text="consultas"
@@ -326,11 +322,10 @@
                         android:textStyle="normal|bold"
                         android:textAlignment="viewStart"
                         android:fontFamily="sans-serif-medium"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="38dp" />
 
                     <Button
                         android:text="vacinas"
@@ -342,11 +337,10 @@
                         android:textStyle="normal|bold"
                         android:textAlignment="viewStart"
                         android:fontFamily="sans-serif-medium"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="38dp" />
 
                     <Button
                         android:text="alergias"
@@ -358,11 +352,10 @@
                         android:textStyle="normal|bold"
                         android:textAlignment="viewStart"
                         android:fontFamily="sans-serif-medium"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:background="@android:color/darker_gray"
                         android:padding="5dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="38dp" />
                 </LinearLayout>
 
             </LinearLayout>
