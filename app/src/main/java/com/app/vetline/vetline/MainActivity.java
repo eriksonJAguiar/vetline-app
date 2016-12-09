@@ -1,11 +1,15 @@
 package com.app.vetline.vetline;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,59 +19,42 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        Button btn_pagina_principal1 = (Button)findViewById(R.id.btn_pagina_principal);
-        Button btn_cadastrar_animal1 = (Button) findViewById(R.id.btn_cadastrar_animal);
-        Button btn_cadastrar_consulta1 = (Button) findViewById(R.id.btn_cadastrar_consulta);
-        Button btn_cadastrar_usuario1 = (Button) findViewById(R.id.btn_cadastrar_usuario);
-        Button btn_edicao_animal = (Button) findViewById(R.id.btn_edicao_animal);
-        Button btn_redefinir_senha1 = (Button) findViewById(R.id.btn_redefinir_senha);
-
-        final Intent pagina_principal = new Intent(this, Tela_pagina_principal.class);
-        final Intent cadastrar_animal1 = new Intent(this, Tela_cadastrar_animal.class);
-        final Intent cadastrar_consulta1 = new Intent(this, Tela_cadastrar_consulta.class);
-        final Intent cadastrar_usuario1 = new Intent(this, Tela_cadastrar_usuario.class);
-        final Intent edicao_animal = new Intent(this, Tela_edicao_animal.class);
-        final Intent redefinir_senha = new Intent(this, Tela_redefinir_senha.class);
+        final EditText campo_usuario1 = (EditText) findViewById(R.id.campo_usuario);
+        final EditText campo_senha1 = (EditText) findViewById(R.id.campo_senha);
 
 
-        btn_pagina_principal1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(pagina_principal);
+        final Button btn_logar1 = (Button) findViewById(R.id.btn_logar);
+        final Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastrar);
 
-            }
-        });
-        btn_cadastrar_animal1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(cadastrar_animal1);
-            }
-        });
-        btn_cadastrar_consulta1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(cadastrar_consulta1);
-            }
-        });
-        btn_edicao_animal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(edicao_animal);
-            }
-        });
-        btn_cadastrar_usuario1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(cadastrar_usuario1);
-            }
-        });
-        btn_redefinir_senha1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(redefinir_senha);
-            }
-        });
+        final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
+        final Intent pagina_cadastro = new Intent(this, Tela_cadastrar_usuario.class);
 
+        btn_logar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String usuario = campo_usuario1.getText().toString();
+                final String senha = campo_senha1.getText().toString();
+                if(usuario.equals("1") && senha.equals("1")){
+                    startActivity(pagina_principal1);
+                }else{
+                    final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                    camposVet2.setVisibility(View.VISIBLE);
+                    camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
+                    camposVet2.setMinimumHeight(210);
+                    TextView msg = (TextView) findViewById(R.id.msg);
+                    msg.setTextColor(Color.parseColor("#a94442"));
+                    msg.setText("ERROR: Usuario incorreto");
+
+
+                }
+            }
+        });
+        btn_cadastrar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(pagina_cadastro);
+            }
+        });
 
 
     }

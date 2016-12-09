@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">vetline</string>
+    <string name="title_activity_tela_google_maps">Map</string>
 </resources>

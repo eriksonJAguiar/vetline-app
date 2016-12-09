@@ -12,12 +12,12 @@ import java.util.List;
  * Created by ProBook on 06/12/2016.
  */
 
-public class Tela_cadastrar_animal extends AppCompatActivity {
+public class Tela_editar_animal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_cadastrar_animal);
+        setContentView(R.layout.tela_editar_animal);
         getSupportActionBar().hide();
 
         List<String> tamanhos = new ArrayList<String>();
@@ -40,6 +40,5 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
         ArrayAdapter<String> spinnerArrayAdapter1 = arrayAdapter1;
         spinnerArrayAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spn11.setAdapter(spinnerArrayAdapter1);
-
     }
 }

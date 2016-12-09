@@ -92,7 +92,8 @@
                     android:textColor="@android:color/holo_green_dark"
                     android:background="@android:color/background_light"
                     android:textSize="18sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:padding="5dp" />
 
                 <CheckBox
                     android:text="Tosa"
@@ -104,7 +105,8 @@
                     android:textColor="@android:color/holo_green_dark"
                     android:background="@android:color/background_light"
                     android:textSize="18sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:padding="5dp" />
 
             </LinearLayout>
 
@@ -163,7 +165,13 @@
                     android:layout_width="match_parent"
                     android:background="@android:color/background_light"
                     android:layout_marginBottom="5dp" />
-
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp"
+                android:paddingRight="10dp">
                 <TextView
                     android:text="Pagamento"
                     android:layout_width="match_parent"
@@ -195,7 +203,8 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                         android:textColor="@android:color/holo_green_dark"
                         android:button="@android:drawable/radiobutton_off_background"
-                        android:background="@android:color/background_light" />
+                        android:background="@android:color/background_light"
+                        android:padding="5dp" />
 
                     <RadioButton
                         android:text="Boleto"
@@ -205,8 +214,41 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                         android:textColor="@android:color/holo_green_dark"
                         android:button="@android:drawable/radiobutton_off_background"
-                        android:background="@android:color/background_light" />
+                        android:background="@android:color/background_light"
+                        android:padding="5dp" />
                 </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:text="Veterinario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView23"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@android:color/holo_green_dark"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:id="@+id/campo_veterinario"
+                    android:hint="Tamanho"
+                    android:layout_weight="0.02"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_height="50dp" />
+
 
             </LinearLayout>
 
@@ -218,6 +260,7 @@
                 android:layout_weight="0.02"
                 android:background="@android:color/holo_green_dark"
                 android:textColor="@android:color/background_light" />
+
 
         </LinearLayout>
 

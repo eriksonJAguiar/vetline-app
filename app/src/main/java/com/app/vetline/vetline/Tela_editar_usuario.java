@@ -11,21 +11,21 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import controller.CCadastrarCliente;
 import controller.CCadastrarVeterinario;
 import model.Cliente;
 import model.Veterinario;
-import controller.CCadastrarCliente;
 
 /**
  * Created by ProBook on 06/12/2016.
  */
 
-public class Tela_cadastrar_usuario extends AppCompatActivity {
+public class Tela_editar_usuario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_cadastrar_usuario);
+        setContentView(R.layout.tela_editar_usuario);
         getSupportActionBar().hide();
         final View animatedView = (View) findViewById(R.id.layoutVerificaUsuario);
         final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView.getLayoutParams();
@@ -38,7 +38,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(camposVet.getVisibility() == View.VISIBLE){
-                        camposVet.setVisibility(View.INVISIBLE);
+                    camposVet.setVisibility(View.INVISIBLE);
 
                     camposUsuario.setVisibility(View.VISIBLE);
 
@@ -146,7 +146,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                             animator.setDuration(300);
                             animator.start();
                         } else {
-                                throw new Exception("Nao e possivel cadastrar");
+                            throw new Exception("Nao e possivel cadastrar");
                         }
                     }catch (Exception e){
                         final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);

@@ -400,6 +400,22 @@
             android:layout_weight="0.02"
             android:background="@android:color/holo_green_dark" />
 
+        <Button
+            android:text="Resetar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_restart"
+            android:layout_weight="0.02"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:text="Apagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_apagar"
+            android:layout_weight="0.02"
+            android:background="@android:color/holo_red_light" />
+
     </LinearLayout>
     </ScrollView>
 
