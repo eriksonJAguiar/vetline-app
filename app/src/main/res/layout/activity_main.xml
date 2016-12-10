@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/campo_usuario"
+                android:id="@+id/campo_nomeUsuario"
                 android:hint="Usuario"
                 android:background="@android:drawable/editbox_background"
                 android:layout_height="50dp" />
@@ -54,7 +54,7 @@
                 android:hint="Senha"
                 android:background="@android:drawable/editbox_background"
                 android:layout_height="50dp"
-                android:layout_below="@+id/campo_usuario"
+                android:layout_below="@+id/campo_nomeUsuario"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:inputType="textPassword" />
