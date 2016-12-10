@@ -86,11 +86,11 @@ public class Tela_editar_usuario extends AppCompatActivity {
             public void onClick(View view) {
                 Cliente user;
                 Veterinario vet;
-                String nome_completo = findViewById(R.id.campo_usuario).toString();
-                String email = findViewById(R.id.campo_usuario).toString();
-                String telefone = findViewById(R.id.campo_usuario).toString();
-                String usuario = findViewById(R.id.campo_usuario).toString();
-                String senha = findViewById(R.id.campo_usuario).toString();
+                String nome_completo = findViewById(R.id.campo_nomeUsuario).toString();
+                String email = findViewById(R.id.campo_nomeUsuario).toString();
+                String telefone = findViewById(R.id.campo_nomeUsuario).toString();
+                String usuario = findViewById(R.id.campo_nomeUsuario).toString();
+                String senha = findViewById(R.id.campo_nomeUsuario).toString();
 
 
                 String crmv;

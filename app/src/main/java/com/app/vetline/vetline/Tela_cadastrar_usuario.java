@@ -7,11 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-
-import com.google.android.gms.vision.text.Line;
 
 import controller.CCadastrarVeterinario;
 import model.Cliente;
@@ -97,17 +96,28 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
             public void onClick(View view) {
                 Cliente user;
                 Veterinario vet;
-                String nome_completo = findViewById(R.id.campo_usuario).toString();
-                String email = findViewById(R.id.campo_usuario).toString();
-                String telefone = findViewById(R.id.campo_usuario).toString();
-                String usuario = findViewById(R.id.campo_usuario).toString();
-                String senha = findViewById(R.id.campo_usuario).toString();
+                EditText nome_completo = (EditText) findViewById(R.id.campo_nomeUsuario);
+                String nome_completoStr = nome_completo.getText().toString();
 
+                EditText email = (EditText)findViewById(R.id.campo_email);
+                EditText cpf = (EditText) findViewById(R.id.campo_cpf);
+                EditText endereco = (EditText)findViewById(R.id.campo_endereco);
+                EditText bairro = (EditText)findViewById(R.id.campo_bairro);
+                EditText num = (EditText)findViewById(R.id.campo_numero);
+                EditText cidade = (EditText) findViewById(R.id.campo_cidade);
+                EditText estado = (EditText)findViewById(R.id.campo_uf);
+                EditText usuario = (EditText) findViewById(R.id.campo_nomeUsuario);
+                EditText senha = (EditText) findViewById(R.id.campo_senha);
+                EditText CRMV = (EditText)findViewById(R.id.campo_crmv);
+                String especialidade = findViewById(R.id.campo_especialidade).toString();
+                String banco = findViewById(R.id.campo_banco).toString();
+                String operacao = findViewById(R.id.campo_operacao).toString();
+                String agencia = findViewById(R.id.campo_agencia).toString();
+                String numConta = findViewById(R.id.campo_numero_conta).toString();
 
-                String crmv;
                 if(mudarOP.isChecked()){
                     try {
-                        crmv = findViewById(R.id.campo_crmv).toString();
+                //        crmv = findViewById(R.id.campo_crmv).toString();
                         vet = new Veterinario();
                         /*vet.setEmail(email);
                         if (vet.getEmail().isEmpty()) {
@@ -185,28 +195,48 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                 }else{
                     try {
                         user = new Cliente();
-                        /*
+
+                        user.setNome(nome_completoStr);
+                        if (user.getNome().isEmpty()) {
+                            throw new Exception("Nome vazio!");
+                        }
                         user.setEmail(email);
                         if (user.getEmail().isEmpty()) {
                             throw new Exception("Email vazio!");
                         }
-                        user.setNome(nome_completo);
-                        if (user.getNome().isEmpty()) {
-                            throw new Exception("Nome vazio!");
+                        user.setCpf(cpf);
+                        if (user.getCpf().isEmpty()) {
+                            throw new Exception("Cpf vazio!");
                         }
-                        user.setTelefone(telefone);
-                        if (user.getTelefone().isEmpty()) {
-                            throw new Exception("Telefone vazio!");
+                        user.setEndereco(endereco);
+                        if (user.getEndereco().isEmpty()) {
+                            throw new Exception("Endereço vazio!");
+                        }
+                        user.setNum(Integer.parseInt(num));
+                        if (user.getNum() == 0) {
+                            throw new Exception("Numero vazio!");
+                        }
+                        user.setBairro(bairro);
+                        if (user.getBairro().isEmpty()) {
+                            throw new Exception("Bairro vazio!");
+                        }
+                        user.setCidade(cidade);
+                        if (user.getCidade().isEmpty()) {
+                            throw new Exception("Cidade vazio!");
+                        }
+                        user.setUf(estado);
+                        if (user.getUf().isEmpty()) {
+                            throw new Exception("Estado vazio!");
                         }
                         user.setLogin(usuario);
                         if (user.getLogin().isEmpty()) {
-                            throw new Exception("Usuario vazio!");
+                            throw new Exception("usuario vazio!");
                         }
                         user.setSenha(senha);
                         if (user.getSenha().isEmpty()) {
-                            throw new Exception("Senha vazio!");
+                            throw new Exception("senha vazia!");
                         }
-                        */
+
                         CCadastrarCliente CCadastrarCliente = new CCadastrarCliente();
                         if (CCadastrarCliente.cadastrarCliente(user)) {
                             final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
@@ -230,7 +260,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                             animator.setDuration(300);
                             animator.start();
                         } else {
-                            throw new Exception("Mao e possivel cadastrar");
+                            throw new Exception("Nao e possivel cadastrar");
                         }
 
                     }catch (Exception e){

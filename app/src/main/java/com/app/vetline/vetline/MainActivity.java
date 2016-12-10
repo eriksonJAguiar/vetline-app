@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        final EditText campo_usuario1 = (EditText) findViewById(R.id.campo_usuario);
+        final EditText campo_usuario1 = (EditText) findViewById(R.id.campo_nomeUsuario);
         final EditText campo_senha1 = (EditText) findViewById(R.id.campo_senha);
 
 
