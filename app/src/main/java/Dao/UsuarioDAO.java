@@ -8,19 +8,20 @@ import model.Usuario;
  */
 
 public class UsuarioDAO  implements GenericDao<Usuario>{
-    @Override
-    public void inserir(Usuario usuario) {
 
+    @Override
+    public boolean inserir(Usuario usuario) {
+        return false;
     }
 
     @Override
-    public void atualizar(Usuario usuario) {
-
+    public boolean atualizar(Usuario usuario) {
+        return false;
     }
 
     @Override
-    public void excluir(Usuario usuario) {
-
+    public boolean excluir(Usuario usuario) {
+        return false;
     }
 
     @Override

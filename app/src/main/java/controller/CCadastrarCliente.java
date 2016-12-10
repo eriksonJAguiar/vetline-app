@@ -12,12 +12,11 @@ import model.Usuario;
 public class CCadastrarCliente {
 
     ClienteDao dao = new ClienteDao();
-    UsuarioDAO dao2 = new UsuarioDAO();
 
     public boolean cadastrarCliente(Cliente c){
 
-        dao.inserir(c);
+        boolean gravou = dao.inserir(c);
 
-        return true;
+        return gravou;
     }
 }

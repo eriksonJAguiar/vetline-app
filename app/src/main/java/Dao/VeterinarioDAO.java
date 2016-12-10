@@ -8,19 +8,20 @@ import model.Veterinario;
  */
 
 public class VeterinarioDAO implements GenericDao<Veterinario> {
-    @Override
-    public void inserir(Veterinario veterinario) {
 
+    @Override
+    public boolean inserir(Veterinario veterinario) {
+        return false;
     }
 
     @Override
-    public void atualizar(Veterinario veterinario) {
-
+    public boolean atualizar(Veterinario veterinario) {
+        return false;
     }
 
     @Override
-    public void excluir(Veterinario veterinario) {
-
+    public boolean excluir(Veterinario veterinario) {
+        return false;
     }
 
     @Override

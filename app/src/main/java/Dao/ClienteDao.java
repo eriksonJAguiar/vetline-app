@@ -1,5 +1,8 @@
 package Dao;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import model.Cliente;
 
 /**
@@ -7,19 +10,29 @@ import model.Cliente;
  */
 
 public class ClienteDao implements GenericDao<Cliente> {
-    @Override
-    public void inserir(Cliente cliente) {
 
+    @Override
+    public boolean inserir(Cliente cliente) {
+        try {
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            DatabaseReference myRef = database.getReference();
+            myRef.child("users").child(cliente.getLogin()).setValue(cliente);
+
+            return true;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
     }
 
     @Override
-    public void atualizar(Cliente cliente) {
-
+    public boolean atualizar(Cliente cliente) {
+        return false;
     }
 
     @Override
-    public void excluir(Cliente cliente) {
-
+    public boolean excluir(Cliente cliente) {
+        return false;
     }
 
     @Override

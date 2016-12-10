@@ -8,19 +8,20 @@ import model.Cliente;
  */
 
 public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
-    @Override
-    public void inserir(AnimalAlergia animalAlergia) {
 
+    @Override
+    public boolean inserir(AnimalAlergia animalAlergia) {
+        return false;
     }
 
     @Override
-    public void atualizar(AnimalAlergia animalAlergia) {
-
+    public boolean atualizar(AnimalAlergia animalAlergia) {
+        return false;
     }
 
     @Override
-    public void excluir(AnimalAlergia animalAlergia) {
-
+    public boolean excluir(AnimalAlergia animalAlergia) {
+        return false;
     }
 
     @Override

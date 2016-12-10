@@ -8,19 +8,20 @@ import model.Cliente;
  */
 
 public class CartaoCreditoDAO implements GenericDao<CartaoCredito> {
-    @Override
-    public void inserir(CartaoCredito cartaoCredito) {
 
+    @Override
+    public boolean inserir(CartaoCredito cartaoCredito) {
+        return false;
     }
 
     @Override
-    public void atualizar(CartaoCredito cartaoCredito) {
-
+    public boolean atualizar(CartaoCredito cartaoCredito) {
+        return false;
     }
 
     @Override
-    public void excluir(CartaoCredito cartaoCredito) {
-
+    public boolean excluir(CartaoCredito cartaoCredito) {
+        return false;
     }
 
     @Override

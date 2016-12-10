@@ -6,9 +6,9 @@ package Dao;
 
 public interface GenericDao<T> {
 
-    public void inserir(T t);
-    public void atualizar(T t);
-    public void excluir(T t);
+    public boolean inserir(T t);
+    public boolean atualizar(T t);
+    public boolean excluir(T t);
     public T buscar(T t);
 
 }

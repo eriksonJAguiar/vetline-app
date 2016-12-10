@@ -8,19 +8,20 @@ import model.ItemConsulta;
  */
 
 public class ItemConsultaDAO implements GenericDao<ItemConsulta> {
-    @Override
-    public void inserir(ItemConsulta itemConsulta) {
 
+    @Override
+    public boolean inserir(ItemConsulta itemConsulta) {
+        return false;
     }
 
     @Override
-    public void atualizar(ItemConsulta itemConsulta) {
-
+    public boolean atualizar(ItemConsulta itemConsulta) {
+        return false;
     }
 
     @Override
-    public void excluir(ItemConsulta itemConsulta) {
-
+    public boolean excluir(ItemConsulta itemConsulta) {
+        return false;
     }
 
     @Override
