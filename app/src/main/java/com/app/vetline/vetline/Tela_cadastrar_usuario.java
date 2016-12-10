@@ -97,8 +97,6 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                 Cliente user;
                 Veterinario vet;
                 EditText nome_completo = (EditText) findViewById(R.id.campo_nomeUsuario);
-                String nome_completoStr = nome_completo.getText().toString();
-
                 EditText email = (EditText)findViewById(R.id.campo_email);
                 EditText cpf = (EditText) findViewById(R.id.campo_cpf);
                 EditText endereco = (EditText)findViewById(R.id.campo_endereco);
@@ -109,11 +107,28 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                 EditText usuario = (EditText) findViewById(R.id.campo_nomeUsuario);
                 EditText senha = (EditText) findViewById(R.id.campo_senha);
                 EditText CRMV = (EditText)findViewById(R.id.campo_crmv);
-                String especialidade = findViewById(R.id.campo_especialidade).toString();
-                String banco = findViewById(R.id.campo_banco).toString();
-                String operacao = findViewById(R.id.campo_operacao).toString();
-                String agencia = findViewById(R.id.campo_agencia).toString();
-                String numConta = findViewById(R.id.campo_numero_conta).toString();
+                EditText especialidade = (EditText)findViewById(R.id.campo_especialidade);
+                EditText banco = (EditText)findViewById(R.id.campo_banco);
+                EditText operacao = (EditText)findViewById(R.id.campo_operacao);
+                EditText agencia = (EditText)findViewById(R.id.campo_agencia);
+                EditText numConta = (EditText)findViewById(R.id.campo_numero_conta);
+
+                String nome_completoStr = nome_completo.getText().toString();
+                String emailStr = email.getText().toString();
+                String cpfStr = cpf.getText().toString();
+                String enderecoStr = endereco.getText().toString();
+                String numeroStr = num.getText().toString();
+                String bairroStr = bairro.getText().toString();
+                String cidadeStr = cidade.getText().toString();
+                String estadoStr = estado.getText().toString();
+                String usuarioStr = usuario.getText().toString();
+                String senhaStr = senha.getText().toString();
+                String crmvStr = CRMV.getText().toString();
+                String especialidadeStr = especialidade.getText().toString();
+                String bancoStr = banco.getText().toString();
+                String operacaoStr = operacao.getText().toString();
+                String agenciaStr = agencia.getText().toString();
+                String numContaStr = numConta.getText().toString();
 
                 if(mudarOP.isChecked()){
                     try {
@@ -200,39 +215,39 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                         if (user.getNome().isEmpty()) {
                             throw new Exception("Nome vazio!");
                         }
-                        user.setEmail(email);
+                        user.setEmail(emailStr);
                         if (user.getEmail().isEmpty()) {
                             throw new Exception("Email vazio!");
                         }
-                        user.setCpf(cpf);
+                        user.setCpf(cpfStr);
                         if (user.getCpf().isEmpty()) {
                             throw new Exception("Cpf vazio!");
                         }
-                        user.setEndereco(endereco);
+                        user.setEndereco(enderecoStr);
                         if (user.getEndereco().isEmpty()) {
                             throw new Exception("Endereço vazio!");
                         }
-                        user.setNum(Integer.parseInt(num));
+                        user.setNum(Integer.parseInt(numeroStr));
                         if (user.getNum() == 0) {
                             throw new Exception("Numero vazio!");
                         }
-                        user.setBairro(bairro);
+                        user.setBairro(bairroStr);
                         if (user.getBairro().isEmpty()) {
                             throw new Exception("Bairro vazio!");
                         }
-                        user.setCidade(cidade);
+                        user.setCidade(cidadeStr);
                         if (user.getCidade().isEmpty()) {
                             throw new Exception("Cidade vazio!");
                         }
-                        user.setUf(estado);
+                        user.setUf(estadoStr);
                         if (user.getUf().isEmpty()) {
                             throw new Exception("Estado vazio!");
                         }
-                        user.setLogin(usuario);
+                        user.setLogin(usuarioStr);
                         if (user.getLogin().isEmpty()) {
                             throw new Exception("usuario vazio!");
                         }
-                        user.setSenha(senha);
+                        user.setSenha(senhaStr);
                         if (user.getSenha().isEmpty()) {
                             throw new Exception("senha vazia!");
                         }
