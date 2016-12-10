@@ -20,8 +20,8 @@ import model.Veterinario;
  * Created by ProBook on 06/12/2016.
  */
 
-public class Tela_editar_usuario extends AppCompatActivity {
-
+public class Tela_editar_usuario extends AppCompatActivity { }
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
         getSupportActionBar().hide();
         final View animatedView = (View) findViewById(R.id.layoutVerificaUsuario);
         final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView.getLayoutParams();
-        params.topMargin= -1073;
+ //       params.topMargin= -1073;
         final LinearLayout camposUsuario = (LinearLayout) findViewById(R.id.layoutVerificaUsuario);
         final LinearLayout camposVet = (LinearLayout) findViewById(R.id.layoutVerificaVeterinario);
         camposVet.setVisibility(View.INVISIBLE);
@@ -80,7 +80,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                 }
             }
         });
-        Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastar);
+       /* Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastar);
         btn_cadastrar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,11 +93,11 @@ public class Tela_editar_usuario extends AppCompatActivity {
                 String senha = findViewById(R.id.campo_nomeUsuario).toString();
 
 
-                String crmv;
+         /*       String crmv;
                 if(mudarOP.isChecked()){
                     try {
                         crmv = findViewById(R.id.campo_crmv).toString();
-                        vet = new Veterinario(banco);
+                       // vet = new Veterinario(banco);
                         /*vet.setEmail(email);
                         if (vet.getEmail().isEmpty()) {
                             throw new Exception("Email vazio!");
@@ -122,7 +122,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                         if (vet.getCrmv().isEmpty()) {
                             throw new Exception("CRMV vazio!");
                         }
-                        */
+
                         CCadastrarVeterinario CCadastrarVeterinario = new CCadastrarVeterinario();
                         if (CCadastrarVeterinario.cadastrarVeterinario(vet)) {
                             final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
@@ -146,7 +146,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                             animator.setDuration(300);
                             animator.start();
                         } else {
-                            throw new Exception("Nao e possivel cadastrar");
+                      //      throw new Exception("Nao e possivel cadastrar");
                         }
                     }catch (Exception e){
                         final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
@@ -174,7 +174,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                 }else{
                     try {
                         user = new Cliente();
-                        /*
+
                         user.setEmail(email);
                         if (user.getEmail().isEmpty()) {
                             throw new Exception("Email vazio!");
@@ -195,7 +195,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                         if (user.getSenha().isEmpty()) {
                             throw new Exception("Senha vazio!");
                         }
-                        */
+
                         CCadastrarCliente CCadastrarCliente = new CCadastrarCliente();
                         if (CCadastrarCliente.cadastrarCliente(user)) {
                             final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
@@ -207,7 +207,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                             msg.setText("SUCESSO: Cadastrado com sucesso");
 
                             final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
-                            final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
+       //                     final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
                             ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
                             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                                 @Override
@@ -232,7 +232,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                         msg.setText("ERROR: "+e.getMessage());
 
                         final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
-                        final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
+        //                final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
                         ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
                         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                             @Override
@@ -251,4 +251,4 @@ public class Tela_editar_usuario extends AppCompatActivity {
         });
 
     }
-}
+}*/
