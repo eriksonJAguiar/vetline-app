@@ -112,7 +112,7 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_nomeUsuario"
+            android:id="@+id/campo_nomeAnimal"
             android:layout_marginLeft="10dp"
             android:hint="Nome"
             android:background="@android:drawable/editbox_background"
@@ -202,7 +202,7 @@
         android:text="Cadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_redefinir"
+        android:id="@+id/btn_cadastraranimal"
         android:layout_weight="0.02"
         android:background="@android:color/holo_green_dark"
                 android:textColor="@android:color/background_light" />
