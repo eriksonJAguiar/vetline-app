@@ -11,8 +11,12 @@ public class Veterinario extends Usuario  {
     private String especialidade;
     private int numConta;
     private int agencia;
+    private String banco;
+    private int operacao;
 
     public Veterinario(){
+        banco = "";
+        setOperacao(0);
         nome = "";
         crmv = 0;
         especialidade = "";
@@ -58,5 +62,22 @@ public class Veterinario extends Usuario  {
 
     public void setAgencia(int agencia) {
         this.agencia = agencia;
+    }
+
+
+    public String getBanco() {
+        return banco;
+    }
+
+    public void setBanco(String banco) {
+        this.banco = banco;
+    }
+
+    public int getOperacao() {
+        return operacao;
+    }
+
+    public void setOperacao(int operacao) {
+        this.operacao = operacao;
     }
 }

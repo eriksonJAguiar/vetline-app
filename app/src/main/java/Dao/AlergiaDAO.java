@@ -1,26 +1,25 @@
 package Dao;
 
 import model.Alergia;
-import model.Cliente;
 
 /**
- * Created by UltronI7 on 06/12/2016.
+ * Created by UltronI7 on 10/12/2016.
  */
 
 public class AlergiaDAO implements GenericDao<Alergia> {
     @Override
-    public void inserir(Alergia alergia) {
-
+    public boolean inserir(Alergia alergia) {
+        return false;
     }
 
     @Override
-    public void atualizar(Alergia alergia) {
-
+    public boolean atualizar(Alergia alergia) {
+        return false;
     }
 
     @Override
-    public void excluir(Alergia alergia) {
-
+    public boolean excluir(Alergia alergia) {
+        return false;
     }
 
     @Override

@@ -97,7 +97,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
                 if(mudarOP.isChecked()){
                     try {
                         crmv = findViewById(R.id.campo_crmv).toString();
-                        vet = new Veterinario();
+                        vet = new Veterinario(banco);
                         /*vet.setEmail(email);
                         if (vet.getEmail().isEmpty()) {
                             throw new Exception("Email vazio!");

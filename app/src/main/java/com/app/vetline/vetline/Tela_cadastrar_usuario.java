@@ -132,33 +132,45 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
 
                 if(mudarOP.isChecked()){
                     try {
-                //        crmv = findViewById(R.id.campo_crmv).toString();
+
                         vet = new Veterinario();
-                        /*vet.setEmail(email);
-                        if (vet.getEmail().isEmpty()) {
-                            throw new Exception("Email vazio!");
-                        }
-                        vet.setNome(nome_completo);
-                        if (vet.getNome().isEmpty()) {
-                            throw new Exception("Nome Completo vazio!");
-                        }
-                        vet.setTelefone(telefone);
-                        if (vet.getTelefone().isEmpty()) {
-                            throw new Exception("Telefone vazio!");
-                        }
-                        vet.setLogin(usuario);
+                        vet.setLogin(usuarioStr);
                         if (vet.getLogin().isEmpty()) {
-                            throw new Exception("Usuario vazio!");
+                            throw new Exception("login vazio!");
                         }
-                        vet.setSenha(senha);
+                        vet.setSenha(senhaStr);
+                        if (vet.getNome().isEmpty()) {
+                            throw new Exception("senha vazio!");
+                        }
+                        vet.setNome(nome_completoStr);
+                        if (vet.getNome().isEmpty()) {
+                            throw new Exception("Nome vazio!");
+                        }
+                        vet.setAgencia(Integer.parseInt(agenciaStr));
+                        if (vet.getAgencia() == 0 ) {
+                            throw new Exception("Agencia vazio!");
+                        }
+                        vet.setCrmv(Integer.parseInt(crmvStr));
                         if (vet.getSenha().isEmpty()) {
-                            throw new Exception("Senha vazia!");
+                            throw new Exception("Crmv vazia!");
                         }
-                        vet.setCrmv(crmv);
-                        if (vet.getCrmv().isEmpty()) {
-                            throw new Exception("CRMV vazio!");
+                        vet.setEspecialidade(especialidadeStr);
+                        if (vet.getEspecialidade().isEmpty()) {
+                            throw new Exception("especialidade vazio!");
                         }
-                        */
+                        vet.setNumConta(Integer.parseInt(numContaStr));
+                        if (vet.getNumConta() == 0) {
+                            throw new Exception("numero conta vazio!");
+                        }
+                        vet.setBanco(bancoStr);
+                        if (vet.getBanco().isEmpty()) {
+                            throw new Exception("banco vazio!");
+                        }
+                        vet.setOperacao(Integer.parseInt(operacaoStr));
+                        if (vet.getOperacao() == 0) {
+                            throw new Exception("operacao vazio!");
+                        }
+
                         CCadastrarVeterinario CCadastrarVeterinario = new CCadastrarVeterinario();
                         if (CCadastrarVeterinario.cadastrarVeterinario(vet)) {
                             final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
