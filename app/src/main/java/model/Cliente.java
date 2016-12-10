@@ -7,7 +7,8 @@ package model;
 public class Cliente extends Usuario {
 
     private String nome;
-    private int cpf;
+    private String cpf;
+    private String email;
     private String endereco;
     private String bairro;
     private int num;
@@ -16,7 +17,8 @@ public class Cliente extends Usuario {
 
     public Cliente(){
         nome = "";
-        cpf = 0;
+        email = "";
+        cpf = "";
         endereco = "";
         bairro = "";
         num = 0;
@@ -32,11 +34,13 @@ public class Cliente extends Usuario {
         this.nome = nome;
     }
 
-    public int getCpf() {
+
+
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -78,5 +82,13 @@ public class Cliente extends Usuario {
 
     public void setUf(String uf) {
         this.uf = uf;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
