@@ -10,9 +10,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import controller.CFazerLogin;
-import model.Usuario;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -34,15 +31,9 @@ public class MainActivity extends AppCompatActivity {
         btn_logar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Usuario user = new Usuario();
-                CFazerLogin login = new CFazerLogin();
-
-                user.setLogin(campo_usuario1.getText().toString());
-                user.setLogin(campo_senha1.getText().toString());
-
-                boolean userlogar = login.fazerLogin(user);
-
-                if(userlogar == true){
+                final String usuario = campo_usuario1.getText().toString();
+                final String senha = campo_senha1.getText().toString();
+                if(usuario.equals("1") && senha.equals("1")){
                     startActivity(pagina_principal1);
                 }else{
                     final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
@@ -63,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(pagina_cadastro);
             }
         });
-        Button btn_redefinir1 = (Button) findViewById(R.id.btn_cadastraranimal);
+        Button btn_redefinir1 = (Button) findViewById(R.id.btn_redefinirSenha);
         final Intent tela_redefinir = new Intent(this, Tela_redefinir_senha.class);
         btn_redefinir1.setOnClickListener(new View.OnClickListener() {
             @Override

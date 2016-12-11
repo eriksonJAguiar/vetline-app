@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.google.firebase.FirebaseApp;
+
 import controller.CCadastrarVeterinario;
 import model.Cliente;
 import model.Veterinario;
@@ -27,6 +29,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastrar_usuario);
+        //FirebaseApp.initializeApp(this);
         getSupportActionBar().hide();
         final View animatedView = (View) findViewById(R.id.layoutVerificaUsuario);
         final View teste1 = (View) findViewById(R.id.layoutVerificaVeterinario);
@@ -139,7 +142,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                             throw new Exception("login vazio!");
                         }
                         vet.setSenha(senhaStr);
-                        if (vet.getNome().isEmpty()) {
+                        if (vet.getSenha().isEmpty()) {
                             throw new Exception("senha vazio!");
                         }
                         vet.setNome(nome_completoStr);
@@ -151,7 +154,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                             throw new Exception("Agencia vazio!");
                         }
                         vet.setCrmv(Integer.parseInt(crmvStr));
-                        if (vet.getSenha().isEmpty()) {
+                        if (vet.getCrmv()== 0) {
                             throw new Exception("Crmv vazia!");
                         }
                         vet.setEspecialidade(especialidadeStr);

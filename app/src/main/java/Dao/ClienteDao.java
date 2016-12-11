@@ -3,6 +3,12 @@ package Dao;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import model.Cliente;
 
 /**
@@ -16,7 +22,17 @@ public class ClienteDao implements GenericDao<Cliente> {
         try {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference myRef = database.getReference();
-            myRef.child("users").child(cliente.getLogin()).setValue(cliente);
+
+            myRef.child("Clientes").child(cliente.getLogin()).child("nome").setValue(cliente.getNome());
+            myRef.child("Clientes").child(cliente.getLogin()).child("bairro").setValue(cliente.getBairro());
+            myRef.child("Clientes").child(cliente.getLogin()).child("cidade").setValue(cliente.getCidade());
+            myRef.child("Clientes").child(cliente.getLogin()).child("cpf").setValue(cliente.getCpf());
+            myRef.child("Clientes").child(cliente.getLogin()).child("email").setValue(cliente.getEmail());
+            myRef.child("Clientes").child(cliente.getLogin()).child("endereco").setValue(cliente.getEndereco());
+            myRef.child("Clientes").child(cliente.getLogin()).child("num").setValue(cliente.getNum());
+            myRef.child("Clientes").child(cliente.getLogin()).child("uf").setValue(cliente.getUf());
+            myRef.child("Clientes").child(cliente.getLogin()).child("senha").setValue(cliente.getSenha());
+
 
             return true;
         }catch (Exception e){
