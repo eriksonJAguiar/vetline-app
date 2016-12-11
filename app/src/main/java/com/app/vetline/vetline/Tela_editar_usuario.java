@@ -366,6 +366,7 @@ public class Tela_editar_usuario extends AppCompatActivity {
         btn_editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recreate();
                 // recarrega a pagina
             }
         });

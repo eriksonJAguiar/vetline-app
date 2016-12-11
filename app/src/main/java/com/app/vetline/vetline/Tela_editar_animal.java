@@ -199,6 +199,7 @@ public class Tela_editar_animal extends AppCompatActivity {
         resetarAnimal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recreate();
                 // recarregar pagina
             }
         });
