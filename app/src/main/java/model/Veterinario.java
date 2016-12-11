@@ -13,6 +13,7 @@ public class Veterinario extends Usuario  {
     private int agencia;
     private String banco;
     private int operacao;
+    private String email;
 
     public Veterinario(){
         banco = "";
@@ -22,6 +23,7 @@ public class Veterinario extends Usuario  {
         especialidade = "";
         numConta = 0;
         agencia = 0;
+        email = "";
     }
 
     public String getNome() {
@@ -79,5 +81,13 @@ public class Veterinario extends Usuario  {
 
     public void setOperacao(int operacao) {
         this.operacao = operacao;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

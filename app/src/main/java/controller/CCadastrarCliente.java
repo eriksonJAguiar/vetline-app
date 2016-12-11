@@ -19,4 +19,17 @@ public class CCadastrarCliente {
 
         return gravou;
     }
+
+    public Cliente buscarCliente(Cliente c){
+
+        return c;
+    }
+
+    public boolean atualizaCliente(Cliente c){
+
+        return true;
+    }
+    public boolean excluiCliente(Cliente c){
+        return true;
+    }
 }
