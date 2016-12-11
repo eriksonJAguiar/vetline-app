@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
@@ -21,6 +22,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import model.Cliente;
+import model.Consulta;
+import model.Usuario;
 
 import static com.app.vetline.vetline.R.id.map;
 
@@ -38,6 +43,9 @@ public class Tela_mapa extends FragmentActivity implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
         final View viewEndereco = (View) findViewById(R.id.layoutEndereco);
         final View viewMapa = (View) findViewById(R.id.layoutMapa);
+
+        final Consulta consul = new Consulta();// carreca a Consulta da tela passada
+        final Cliente cli = new Cliente(); // carrega o cliente que esta fazendo a consulta
 
         final LinearLayout.LayoutParams paramsEndereco = (LinearLayout.LayoutParams) viewEndereco.getLayoutParams();
         final LinearLayout.LayoutParams paramsMapa = (LinearLayout.LayoutParams) viewMapa.getLayoutParams();
@@ -85,6 +93,26 @@ public class Tela_mapa extends FragmentActivity implements OnMapReadyCallback {
                     animator.start();
 
                 }
+            }
+        });
+
+        Button marcarConsulta = (Button) findViewById(R.id.btn_marcar);
+        marcarConsulta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                EditText local = (EditText) findViewById(R.id.campoEnderecoMarcar);
+
+                if (mudarOP.isChecked()){
+                    String localStr = local.getText().toString();
+                    consul.setLocal(localStr);
+                    //atualizar a consulta no banco
+                }
+                else {
+                    consul.setLocal(cli.getEndereco() + "," + cli.getNum() + "," + cli.getBairro()+ "," + cli.getCidade() + "-" + cli.getUf() );
+                    //atualizar a consulta no banco
+                }
+
             }
         });
 

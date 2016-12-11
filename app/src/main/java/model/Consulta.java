@@ -1,35 +1,35 @@
 package model;
 
-import java.util.Date;
-
 /**
  * Created by root on 05/12/16.
  */
 
 public class Consulta {
-    private Date dataconsulta;
+    private String dataconsulta;
     private String descricao;
     private String local;
     private double preco;
-    private String diagnostico;
     private boolean status;
     private int classificacao;
+    private String hora;
+    private String tipoPagamento;
 
     public Consulta(){
         descricao = "";
         local = "";
         preco = 0.0;
-        diagnostico = "";
         status = false;
         classificacao = 0;
+        hora="";
+        setTipoPagamento("");
     }
 
 
-    public Date getDataconsulta() {
+    public String getDataconsulta() {
         return dataconsulta;
     }
 
-    public void setDataconsulta(Date dataconsulta) {
+    public void setDataconsulta(String dataconsulta) {
         this.dataconsulta = dataconsulta;
     }
 
@@ -57,14 +57,6 @@ public class Consulta {
         this.preco = preco;
     }
 
-    public String getDiagnostico() {
-        return diagnostico;
-    }
-
-    public void setDiagnostico(String diagnostico) {
-        this.diagnostico = diagnostico;
-    }
-
     public boolean isStatus() {
         return status;
     }
@@ -79,5 +71,22 @@ public class Consulta {
 
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
+    }
+
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(String tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 }

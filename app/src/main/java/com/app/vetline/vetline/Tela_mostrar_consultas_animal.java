@@ -41,11 +41,11 @@ public class Tela_mostrar_consultas_animal extends AppCompatActivity {
 
 
         Button btn_adicionar1 = (Button) findViewById(R.id.btn_adicionarConsulta);
-        final Intent tela_mapa = new Intent(this, Tela_mapa.class);
+        final Intent tela_Consulta = new Intent(this, Tela_cadastrar_consulta.class);
         btn_adicionar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(tela_mapa);
+                startActivity(tela_Consulta);
             }
         });
     }

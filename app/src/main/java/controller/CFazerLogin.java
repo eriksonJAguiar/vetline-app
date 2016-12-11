@@ -12,10 +12,17 @@ public class CFazerLogin {
     UsuarioDAO dao = new UsuarioDAO();
 
     public boolean fazerLogin(Usuario u){
+        try {
+            if(dao.buscar(u).getLogin().isEmpty()){
 
-        dao.buscar(u);
+                return false;
+            }
 
-        return true;
+        }catch (Exception e){
+            return true;
+        }
+
+        return false;
     }
 
 }
