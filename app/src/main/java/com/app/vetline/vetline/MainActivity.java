@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import controller.CFazerLogin;
+import model.Usuario;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -31,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
         btn_logar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String usuario = campo_usuario1.getText().toString();
-                final String senha = campo_senha1.getText().toString();
-                if(usuario.equals("1") && senha.equals("1")){
+                Usuario user = new Usuario();
+                CFazerLogin login = new CFazerLogin();
+
+                user.setLogin(campo_usuario1.getText().toString());
+                user.setSenha(campo_senha1.getText().toString());
+                if(login.fazerLogin(user) == true){
                     startActivity(pagina_principal1);
                 }else{
                     final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
