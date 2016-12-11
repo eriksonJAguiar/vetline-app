@@ -62,7 +62,7 @@
 
                 <TextView
                     android:text="Nome:"
-                    android:id="@+id/view_nome"
+                    android:id="@+id/view_nomePrincipal"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
@@ -107,9 +107,9 @@
                     android:layout_width="match_parent"
                     android:layout_marginTop="5dp"
                     android:layout_height="40dp"
-                    android:layout_below="@+id/view_nome"
-                    android:layout_alignLeft="@+id/view_nome"
-                    android:layout_alignStart="@+id/view_nome" />
+                    android:layout_below="@+id/view_nomePrincipal"
+                    android:layout_alignLeft="@+id/view_nomePrincipal"
+                    android:layout_alignStart="@+id/view_nomePrincipal" />
 
                 <ImageButton
                     android:id="@+id/btn_editar_perfil"

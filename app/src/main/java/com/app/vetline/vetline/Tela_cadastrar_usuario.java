@@ -96,7 +96,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
             public void onClick(View view) {
                 Cliente user;
                 Veterinario vet;
-                EditText nome_completo = (EditText) findViewById(R.id.campo_nomeUsuario);
+                EditText nome_completo = (EditText) findViewById(R.id.campo_nomeUsuarioCadastro);
                 EditText email = (EditText)findViewById(R.id.campo_email);
                 EditText cpf = (EditText) findViewById(R.id.campo_cpf);
                 EditText endereco = (EditText)findViewById(R.id.campo_endereco);
@@ -104,7 +104,7 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                 EditText num = (EditText)findViewById(R.id.campo_numero);
                 EditText cidade = (EditText) findViewById(R.id.campo_cidade);
                 EditText estado = (EditText)findViewById(R.id.campo_uf);
-                EditText usuario = (EditText) findViewById(R.id.campo_nomeUsuario);
+                EditText usuario = (EditText) findViewById(R.id.campo_nomeLogin);
                 EditText senha = (EditText) findViewById(R.id.campo_senha);
                 EditText CRMV = (EditText)findViewById(R.id.campo_crmv);
                 EditText especialidade = (EditText)findViewById(R.id.campo_especialidade);
@@ -169,6 +169,10 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                         vet.setOperacao(Integer.parseInt(operacaoStr));
                         if (vet.getOperacao() == 0) {
                             throw new Exception("operacao vazio!");
+                        }
+                        vet.setEmail(emailStr);
+                        if (vet.getEmail().isEmpty()){
+                            throw new Exception("email vazio!");
                         }
 
                         CCadastrarVeterinario CCadastrarVeterinario = new CCadastrarVeterinario();

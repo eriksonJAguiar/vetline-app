@@ -111,14 +111,14 @@
                 android:layout_weight="0.02"
                 android:background="?android:attr/colorPressedHighlight"
                 android:textColor="@android:color/background_light"
-                android:layout_below="@+id/btn_redefinir"
+                android:layout_below="@+id/btn_cadastraranimal"
                 android:layout_centerHorizontal="true" />
 
             <Button
                 android:text="Esqueci minha senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_redefinir"
+                android:id="@+id/btn_cadastraranimal"
                 android:layout_weight="0.02"
                 android:background="@android:color/holo_red_dark"
                 android:textColor="@android:color/background_light"

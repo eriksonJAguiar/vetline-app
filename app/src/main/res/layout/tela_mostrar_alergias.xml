@@ -46,7 +46,7 @@
                 <TextView
                     android:text="raça:"
                     android:layout_height="30dp"
-                    android:id="@+id/view_tipo_perfil"
+                    android:id="@+id/view_RacaAlergia"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
@@ -57,9 +57,9 @@
                     android:background="@android:color/white"
                     android:padding="5dp"
                     android:layout_width="match_parent"
-                    android:layout_below="@+id/view_nome"
-                    android:layout_alignLeft="@+id/view_nome"
-                    android:layout_alignStart="@+id/view_nome"
+                    android:layout_below="@+id/view_nomeAlergia"
+                    android:layout_alignLeft="@+id/view_nomeAlergia"
+                    android:layout_alignStart="@+id/view_nomeAlergia"
                     android:layout_marginTop="3dp" />
 
                 <TextView
@@ -81,7 +81,7 @@
 
                 <TextView
                     android:text="Nome:"
-                    android:id="@+id/view_nome"
+                    android:id="@+id/view_nomeAlergia"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
@@ -139,7 +139,7 @@
 
             <Button
                 android:text="Adicionar Alergias"
-                android:id="@+id/btn_adicionar"
+                android:id="@+id/btn_adicionarAlergias"
                 android:layout_weight="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                 android:textSize="18sp"
