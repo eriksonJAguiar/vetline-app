@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:inputType="date"
                 android:ems="10"
-                android:id="@+id/campo_data"
+                android:id="@+id/campo_dataVacina"
                 android:layout_marginLeft="10dp"
                 android:hint="Data"
                 android:background="@android:drawable/editbox_background"
@@ -180,7 +180,7 @@
             android:text="Cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_cadastar"
+            android:id="@+id/btn_cadastarVacina"
             android:layout_weight="0.02"
             android:background="@android:color/holo_green_dark"
             android:textColor="@android:color/background_light" />

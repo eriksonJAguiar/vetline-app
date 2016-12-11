@@ -9,9 +9,9 @@ import java.util.Date;
 public class Vacina {
 
     private String vacina;
-    private Date data;
+    private String data;
     private String descricao;
-    private Date validaAte;
+    private String validaAte;
 
     public Vacina(){
         vacina = "";
@@ -26,11 +26,11 @@ public class Vacina {
         this.vacina = vacina;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
@@ -42,11 +42,11 @@ public class Vacina {
         this.descricao = descricao;
     }
 
-    public Date getValidaAte() {
+    public String getValidaAte() {
         return validaAte;
     }
 
-    public void setValidaAte(Date validaAte) {
+    public void setValidaAte(String validaAte) {
         this.validaAte = validaAte;
     }
 }
