@@ -46,7 +46,7 @@
                 <TextView
                     android:text="raça:"
                     android:layout_height="30dp"
-                    android:id="@+id/view_tipo_perfil"
+                    android:id="@+id/view_RacaConsulta"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
@@ -57,15 +57,15 @@
                     android:background="@android:color/white"
                     android:padding="5dp"
                     android:layout_width="match_parent"
-                    android:layout_below="@+id/view_nome"
-                    android:layout_alignLeft="@+id/view_nome"
-                    android:layout_alignStart="@+id/view_nome"
+                    android:layout_below="@+id/view_nomeConsulta"
+                    android:layout_alignLeft="@+id/view_nomeConsulta"
+                    android:layout_alignStart="@+id/view_nomeConsulta"
                     android:layout_marginTop="3dp" />
 
                 <TextView
                     android:text="perfil"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView"
+                    android:id="@+id/textView2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="10sp"
                     android:textColor="@android:color/holo_green_light"
@@ -81,7 +81,7 @@
 
                 <TextView
                     android:text="Nome:"
-                    android:id="@+id/view_nome"
+                    android:id="@+id/view_nomeConsulta"
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
@@ -139,7 +139,7 @@
 
             <Button
                 android:text="Marcar Consulta"
-                android:id="@+id/btn_adicionar"
+                android:id="@+id/btn_adicionarConsulta"
                 android:layout_weight="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                 android:textSize="18sp"
@@ -192,41 +192,19 @@
                 android:weightSum="1"
                 android:layout_weight="0.30">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
-                        android:text="consulta1"
-                        android:layout_width="match_parent"
-                        android:id="@+id/btn_consulta1"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/holo_green_dark"
-                        android:textStyle="normal|bold"
-                        android:fontFamily="sans-serif-medium"
-                        android:layout_marginTop="2dp"
-                        android:background="@android:color/white"
-                        android:padding="5dp"
-                        android:textAlignment="viewStart"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_height="40dp" />
+                   <ListView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/list_view_mostrar_consultas">
 
-                    <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="30dp"
-                        android:elevation="3dp"
-                        android:layout_marginRight="13dp"
-                        android:layout_marginEnd="13dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:background="@android:drawable/ic_menu_edit" />
+                   </ListView>
 
 
-                </RelativeLayout>
+                </LinearLayout>
 
 
 

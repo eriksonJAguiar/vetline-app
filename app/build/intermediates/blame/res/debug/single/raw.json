@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-tagmanager-v4-impl\\10.0.1\\res\\raw\\gtm_analytics"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-tagmanager-v4-impl\\10.0.1\\res\\raw\\gtm_analytics"
     }
 ]

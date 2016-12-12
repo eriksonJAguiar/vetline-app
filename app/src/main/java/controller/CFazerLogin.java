@@ -1,6 +1,8 @@
 package controller;
 
+import Dao.ClienteDao;
 import Dao.UsuarioDAO;
+import model.Cliente;
 import model.Usuario;
 
 /**
@@ -9,20 +11,23 @@ import model.Usuario;
 
 public class CFazerLogin {
 
-    UsuarioDAO dao = new UsuarioDAO();
+    ClienteDao dao = new ClienteDao();
 
     public boolean fazerLogin(Usuario u){
         try {
-            if(dao.buscar(u).getLogin().isEmpty()){
+            Cliente c = new Cliente();
+            c.setLogin(u.getLogin());
+            c.setSenha(u.getSenha());
+            if(!dao.buscar(c).getLogin().isEmpty())
+                return true;
 
-                return false;
-            }
+            return false;
+
 
         }catch (Exception e){
-            return true;
+            e.printStackTrace();
+            return false;
         }
-
-        return false;
     }
 
 }

@@ -1,7 +1,7 @@
--injars 'C:\Users\ProBook\Desktop\vetline-app-master\vetline\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'C:\Users\ProBook\Desktop\vetline-app-master\vetline\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars /root/AndroidStudioProjects/vetline-app/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /root/AndroidStudioProjects/vetline-app/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
--libraryjars 'C:\Users\ProBook\AppData\Local\Android\Sdk\build-tools\25.0.1\lib\shrinkedAndroid.jar'
+-libraryjars /root/Android/Sdk/build-tools/25.0.1/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration 'C:\Users\ProBook\Desktop\vetline-app-master\vetline\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration /root/AndroidStudioProjects/vetline-app/app/build/intermediates/multi-dex/debug/components.flags
 
 
 -keep public class * extends android.app.Instrumentation {

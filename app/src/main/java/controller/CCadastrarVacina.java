@@ -1,8 +1,6 @@
 package controller;
 
-import Dao.AlergiaDAO;
 import Dao.VacinaDAO;
-import model.Alergia;
 import model.Vacina;
 
 /**

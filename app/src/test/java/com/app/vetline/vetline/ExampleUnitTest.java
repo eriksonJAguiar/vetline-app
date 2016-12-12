@@ -17,7 +17,9 @@ import java.util.concurrent.ExecutionException;
 
 import Dao.ClienteDao;
 import controller.CCadastrarCliente;
+import controller.CFazerLogin;
 import model.Cliente;
+import model.Usuario;
 
 import static org.junit.Assert.*;
 
@@ -29,7 +31,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-        assertTrue(buscouTodos());
+        assertTrue(logar());
     }
     public boolean gravou(){
 
@@ -123,6 +125,24 @@ public class ExampleUnitTest {
             e.printStackTrace();
             return false;
         }
+    }
+    public boolean logar(){
+        CFazerLogin l = new CFazerLogin();
+
+        Usuario u = new Usuario();
+
+        u.setLogin("erikson");
+        u.setSenha("123456");
+
+        if(l.fazerLogin(u)){
+            System.out.println("Login Valido");
+            return true;
+        }
+        else{
+            System.out.println("Login Inválido");
+        }
+
+        return false;
     }
 
 

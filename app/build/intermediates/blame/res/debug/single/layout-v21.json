@@ -1,22 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.0.1\\res\\layout-v21\\place_autocomplete_fragment.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.0.1\\res\\layout-v21\\place_autocomplete_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout-v21/notification_action.xml"
     }
 ]

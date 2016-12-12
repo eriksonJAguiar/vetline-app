@@ -1,10 +1,22 @@
 package model;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.Reference;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+
 /**
  * Created by root on 05/12/16.
  */
-
+@Entity(value = "animal")
 public class Animal {
+
+    @Id
+    private ObjectId _id;
 
     private String nome;
     private int pedigree;
@@ -12,12 +24,16 @@ public class Animal {
     private String tamanho ;
     private String genero;
 
+    @Reference(value = "itemAlergias")
+    private ArrayList<ItemAlergia> alergias;
+
     public Animal(){
         nome = "";
         pedigree = 0;
         raca = "";
         tamanho = "";
         genero = "";
+        alergias = new ArrayList<>();
     }
 
 

@@ -68,10 +68,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="com.app.vetline.vetline.Tela_pagina_principal"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
             android:name="com.app.vetline.vetline.Tela_redefinir_senha"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />

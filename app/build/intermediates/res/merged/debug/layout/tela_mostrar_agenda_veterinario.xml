@@ -66,29 +66,18 @@
                 android:weightSum="1"
                 android:layout_weight="0.30">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:text="animal1 - serviço1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_consultas">
+                    <ListView
                         android:layout_width="match_parent"
-                        android:id="@+id/btn_consulta1"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/holo_green_dark"
-                        android:textStyle="normal|bold"
-                        android:fontFamily="sans-serif-medium"
-                        android:layout_marginTop="2dp"
-                        android:background="@android:color/white"
-                        android:padding="5dp"
-                        android:textAlignment="viewStart"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_height="40dp" />
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lista_consultas">
 
+                    </ListView>
 
-                </RelativeLayout>
+                </LinearLayout>
 
 
 

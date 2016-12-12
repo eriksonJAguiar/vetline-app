@@ -32,7 +32,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:paddingRight="10dp"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp">
 
             <TextView
                 android:text="Selecionar Imagem"
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/campo_usuario"
+                android:id="@+id/campo_nomeUsuarioCadastro"
                 android:layout_marginLeft="10dp"
                 android:hint="Nome Completo"
                 android:background="@android:drawable/editbox_background"
@@ -297,7 +297,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/bairro"
+                android:id="@+id/campo_bairro"
                 android:layout_marginLeft="10dp"
                 android:hint="Bairro"
                 android:background="@android:drawable/editbox_background"
@@ -307,7 +307,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/cidade"
+                android:id="@+id/campo_cidade"
                 android:layout_marginLeft="10dp"
                 android:hint="Cidade"
                 android:background="@android:drawable/editbox_background"
@@ -350,7 +350,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/campo_usuario"
+                android:id="@+id/campo_nomeLogin"
                 android:layout_marginLeft="10dp"
                 android:hint="Usuário"
                 android:layout_weight="0.02"

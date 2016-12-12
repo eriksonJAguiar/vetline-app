@@ -28,7 +28,6 @@
         <activity android:name=".Tela_cadastrar_consulta" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_cadastrar_usuario" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_editar_animal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
-        <activity android:name=".Tela_pagina_principal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_redefinir_senha" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_editar_usuario" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_mostrar_agenda_veterinario" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>

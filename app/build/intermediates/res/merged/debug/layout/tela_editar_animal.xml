@@ -31,7 +31,7 @@
             android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
             android:paddingRight="10dp"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp">
 
             <TextView
                 android:text="Selecionar Imagem"
@@ -104,7 +104,7 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_usuario"
+            android:id="@+id/campo_nomeAnimalEdicao"
             android:layout_marginLeft="10dp"
             android:hint="Nome"
             android:background="@android:drawable/editbox_background"
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_num_pedigree"
+            android:id="@+id/campo_num_pedigreeEditar"
             android:layout_marginLeft="10dp"
             android:hint="Numero de Pedigree"
             android:background="@android:drawable/editbox_background"
@@ -139,7 +139,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:ems="10"
-            android:id="@+id/campo_tamanho"
+            android:id="@+id/campo_tamanhoEditar"
             android:layout_marginLeft="10dp"
             android:hint="Tamanho"
             android:layout_weight="0.02"
@@ -176,7 +176,7 @@
             android:layout_height="50dp"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_genero"
+            android:id="@+id/campo_generoEditar"
             android:layout_marginLeft="10dp"
             android:hint="Genero"
             android:background="@android:drawable/editbox_background" />
@@ -185,7 +185,7 @@
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/campo_raca"
+            android:id="@+id/campo_racaEditar"
             android:layout_marginLeft="10dp"
             android:hint="Raça"
             android:background="@android:drawable/editbox_background"
@@ -196,7 +196,7 @@
         android:text="Editar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_editar"
+        android:id="@+id/btn_editarAnimal"
         android:layout_weight="0.02"
         android:background="@android:color/holo_green_dark"
         android:textColor="@android:color/background_light" />
@@ -205,7 +205,7 @@
         android:text="Resetar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_resetar"
+        android:id="@+id/btn_resetarAnimal"
         android:layout_weight="0.02"
         android:background="@android:color/holo_orange_dark"
         android:textColor="@android:color/background_light" />
@@ -214,7 +214,7 @@
             android:text="Apagar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_apagar"
+            android:id="@+id/btn_apagarAnimal"
             android:layout_weight="0.02"
             android:background="@android:color/holo_red_dark"
             android:textColor="@android:color/background_light" />
