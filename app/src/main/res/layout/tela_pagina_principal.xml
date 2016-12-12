@@ -33,7 +33,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="155dp"
+            android:layout_height="wrap_content"
             android:weightSum="1">
 
             <RelativeLayout
@@ -41,7 +41,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:paddingRight="10dp"
-                android:layout_height="171dp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:text="perfil"
@@ -61,65 +61,37 @@
                     android:layout_alignParentStart="true" />
 
                 <TextView
-                    android:text="Nome:"
-                    android:id="@+id/view_nomePrincipal"
-                    android:layout_weight="1"
+                    android:text="Ola, Bem vindo(a) Fulana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:background="@android:color/white"
+                    android:background="@color/cast_expanded_controller_progress_text_color"
                     android:padding="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_alignTop="@+id/btn_image"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_toEndOf="@+id/btn_image"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="5dp" />
-
-                <ImageView
-                    app:srcCompat="@drawable/sem_imagem"
-                    android:id="@+id/btn_image"
-                    android:padding="5dp"
-                    android:background="@android:color/holo_green_dark"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    style="@android:style/Widget.DeviceDefault.Light.TextView.ListSeparator" />
 
                 <TextView
-                    android:text="tipo de perfil:"
-                    android:id="@+id/view_tipo_perfil"
-                    android:layout_weight="1"
+                    android:text="Voce e uma veterinaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
                     android:textSize="18sp"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textStyle="normal|bold"
-                    android:textAlignment="viewStart"
-                    android:fontFamily="sans-serif-medium"
-                    android:background="@android:color/white"
+                    android:background="@android:color/background_light"
                     android:padding="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@+id/view_nomePrincipal"
-                    android:layout_alignLeft="@+id/view_nomePrincipal"
-                    android:layout_alignStart="@+id/view_nomePrincipal" />
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:shadowColor="@android:color/holo_green_dark"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:selectAllOnFocus="false"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView.ListSeparator" />
 
-                <ImageButton
-                    android:id="@+id/btn_editar_perfil"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:elevation="1dp"
-                    android:background="@android:drawable/ic_menu_edit"
-                    android:layout_alignBottom="@+id/btn_image"
-                    android:layout_alignRight="@+id/btn_image"
-                    android:layout_alignEnd="@+id/btn_image" />
 
             </RelativeLayout>
 
