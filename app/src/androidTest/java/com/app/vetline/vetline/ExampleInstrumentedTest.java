@@ -4,8 +4,17 @@ import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoDatabase;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import model.Cliente;
 
 import static org.junit.Assert.*;
 
@@ -18,9 +27,37 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() throws Exception {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
+        assertTrue(gravou());
+    }
+    public boolean gravou(){
 
-        assertEquals("com.app.vetline.vetline", appContext.getPackageName());
+        try {
+            MongoClient mongo = new MongoClient("localhost",27017);
+            MongoDatabase db = mongo.getDatabase("vetline");
+
+
+            Cliente c = new Cliente();
+
+            c.setNome("erikson");
+            c.setEmail("erjulioaguiar@gmail.com");
+
+
+            BasicDBObject basicDBObject = new BasicDBObject("cliente",c);
+
+
+
+            DBCollection coll = (DBCollection) db.getCollection("clientes");
+
+            coll.save(basicDBObject);
+
+            return true;
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+
     }
 }

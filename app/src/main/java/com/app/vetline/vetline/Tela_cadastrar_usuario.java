@@ -246,8 +246,8 @@ public class Tela_cadastrar_usuario extends AppCompatActivity {
                         if (user.getEndereco().isEmpty()) {
                             throw new Exception("Endereço vazio!");
                         }
-                        user.setNum(Integer.parseInt(numeroStr));
-                        if (user.getNum() == 0) {
+                        user.setNumero(Integer.parseInt(numeroStr));
+                        if (user.getNumero() == 0) {
                             throw new Exception("Numero vazio!");
                         }
                         user.setBairro(bairroStr);

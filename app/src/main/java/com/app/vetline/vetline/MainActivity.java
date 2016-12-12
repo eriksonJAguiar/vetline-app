@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_logar1 = (Button) findViewById(R.id.btn_logar);
         final Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastrar);
 
-        final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
+        //final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
         final Intent pagina_cadastro = new Intent(this, Tela_cadastrar_usuario.class);
 
         btn_logar1.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 user.setLogin(campo_usuario1.getText().toString());
                 user.setSenha(campo_senha1.getText().toString());
                 if(login.fazerLogin(user) == true){
-                    startActivity(pagina_principal1);
+                    //startActivity(pagina_principal1);
                 }else{
                     final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
                     camposVet2.setVisibility(View.VISIBLE);

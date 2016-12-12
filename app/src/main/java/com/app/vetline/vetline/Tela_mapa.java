@@ -109,7 +109,7 @@ public class Tela_mapa extends FragmentActivity implements OnMapReadyCallback {
                     //atualizar a consulta no banco
                 }
                 else {
-                    consul.setLocal(cli.getEndereco() + "," + cli.getNum() + "," + cli.getBairro()+ "," + cli.getCidade() + "-" + cli.getUf() );
+                    consul.setLocal(cli.getEndereco() + "," + cli.getNumero() + "," + cli.getBairro()+ "," + cli.getCidade() + "-" + cli.getUf() );
                     //atualizar a consulta no banco
                 }
 

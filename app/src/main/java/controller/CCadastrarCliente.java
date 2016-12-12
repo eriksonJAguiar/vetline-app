@@ -1,5 +1,8 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Dao.ClienteDao;
 import Dao.UsuarioDAO;
 import model.Cliente;
@@ -15,14 +18,14 @@ public class CCadastrarCliente {
 
     public boolean cadastrarCliente(Cliente c){
 
-        boolean gravou = dao.inserir(c);
+       if(dao.inserir(c))
+           return true;
 
-        return gravou;
+        return false;
     }
 
     public Cliente buscarCliente(Cliente c){
-
-        return c;
+        return dao.buscar(c);
     }
 
     public boolean atualizaCliente(Cliente c){
@@ -31,5 +34,9 @@ public class CCadastrarCliente {
     }
     public boolean excluiCliente(Cliente c){
         return true;
+    }
+
+    public ArrayList<Cliente> buscaTodos(){
+        return dao.buscarTodos();
     }
 }

@@ -1,17 +1,26 @@
 package model;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+
+import java.io.Serializable;
+
 /**
- * Created by root on 05/12/16.
- */
+ * Created by root on 05/12/16.*/
 
-public class Cliente extends Usuario {
+@Entity(value = "clientes")
+public class Cliente extends Usuario implements Serializable{
 
-    private String nome;
+    @Id
+    private ObjectId _id;
+
     private String cpf;
+    private String nome;
     private String email;
     private String endereco;
     private String bairro;
-    private int num;
+    private int numero;
     private String cidade;
     private String uf;
 
@@ -21,7 +30,7 @@ public class Cliente extends Usuario {
         cpf = "";
         endereco = "";
         bairro = "";
-        num = 0;
+        numero = 0;
         cidade = "";
         uf = "";
     }
@@ -33,7 +42,6 @@ public class Cliente extends Usuario {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 
 
     public String getCpf() {
@@ -60,12 +68,12 @@ public class Cliente extends Usuario {
         this.bairro = bairro;
     }
 
-    public int getNum() {
-        return num;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setNum(int num) {
-        this.num = num;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public String getCidade() {
@@ -91,4 +99,5 @@ public class Cliente extends Usuario {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
