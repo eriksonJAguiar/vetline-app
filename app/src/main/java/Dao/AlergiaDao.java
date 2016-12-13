@@ -49,7 +49,15 @@ public class AlergiaDao implements GenericDao<Alergia> {
 
     @Override
     public boolean atualizar(Alergia alergia) {
-        return false;
+
+        try {
+            collection.insert(alergia);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
     },
@@ -12,20 +8,8 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
-    },
-    {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
-    },
-    {
-        "merged": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/C:\\Users\\ProBook\\Desktop\\vetline-app-master\\vetline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",

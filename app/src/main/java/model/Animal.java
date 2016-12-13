@@ -24,8 +24,6 @@ public class Animal {
     private String tamanho ;
     private String genero;
 
-    @Reference(value = "itemAlergias")
-    private ArrayList<ItemAlergia> alergias;
 
     public Animal(){
         nome = "";
@@ -33,7 +31,6 @@ public class Animal {
         raca = "";
         tamanho = "";
         genero = "";
-        alergias = new ArrayList<>();
     }
 
 

@@ -1,5 +1,6 @@
 package controller;
 
+import Dao.AlergiaDao;
 import model.Alergia;
 
 /**
@@ -7,7 +8,7 @@ import model.Alergia;
  */
 
 public class CCadastrarAlergia {
-    AlergiaDAO dao = new AlergiaDAO();
+    AlergiaDao dao = new AlergiaDao();
 
     public boolean inserirAlergia(Alergia al){
 

@@ -37,7 +37,6 @@ public class ClienteDao implements GenericDao<Cliente> {
     private MongoCollection collection;
 
 
-
     public ClienteDao(){
 
         jdb = new MongoClient().getDB("vetline");

@@ -31,7 +31,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-        assertTrue(logar());
+        assertTrue(gravou());
     }
     public boolean gravou(){
 
@@ -51,16 +51,16 @@ public class ExampleUnitTest {
             c.setLogin("el boca de pelo");
             c.setSenha("boca123");*/
 
-            c.setNome("Erikson J. Aguiar 2");
-            c.setEmail("erjulioaguiar2@gmail.com");
-            c.setBairro("Vt");
+            c.setNome("Jose");
+            c.setEmail("jose@gmail.com");
+            c.setBairro("Centro");
             c.setCidade("SM");
             c.setCpf("000.000.000-00");
-            c.setEndereco("Ildeu Braulio Filgueras");
+            c.setEndereco("Rua teste");
             c.setNumero(947);
             c.setUf("PR");
-            c.setLogin("erikson");
-            c.setSenha("123456");
+            c.setLogin("jose");
+            c.setSenha("jose123");
 
 
 
