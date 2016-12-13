@@ -2,6 +2,7 @@ package com.app.vetline.vetline;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
         getSupportActionBar().hide();
 
         final EditText campo_usuario1 = (EditText) findViewById(R.id.campo_nomeUsuario);
@@ -28,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_logar1 = (Button) findViewById(R.id.btn_logar);
         final Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastrar);
 
-        //final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
+        final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
         final Intent pagina_cadastro = new Intent(this, Tela_cadastrar_usuario.class);
 
         btn_logar1.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 user.setLogin(campo_usuario1.getText().toString());
                 user.setSenha(campo_senha1.getText().toString());
                 if(login.fazerLogin(user) == true){
-                    //startActivity(pagina_principal1);
+                    final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                    camposVet2.setVisibility(View.VISIBLE);
+                    camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
+                    camposVet2.setMinimumHeight(210);
+                    TextView msg = (TextView) findViewById(R.id.msg);
+                    msg.setTextColor(Color.parseColor("#a94442"));
+                    msg.setText("Logado com sucesso, Aguarde voce ta sendo redicionado!.");
+                    startActivity(pagina_principal1);
                 }else{
                     final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
                     camposVet2.setVisibility(View.VISIBLE);

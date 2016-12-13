@@ -8,6 +8,10 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +19,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
         <activity android:name=".Tela_cadastrar_animal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_cadastrar_consulta" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_cadastrar_usuario" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
@@ -35,6 +39,7 @@
         <activity android:name=".Tela_mostrar_clinicas_veterinario" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_mostrar_consultas_animal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_mostrar_vacinas" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_pagina_principal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
 
 
         <!--

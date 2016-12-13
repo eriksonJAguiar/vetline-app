@@ -4,12 +4,14 @@ package Dao;
  * Created by root on 13/12/16.
  */
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
-import org.jongo.MongoCursor;
 
 import java.util.ArrayList;
 
@@ -23,23 +25,22 @@ import model.Cliente;
 public class ClienteDAO implements GenericDao<Cliente> {
 
 
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
-
+    private MongoClient jdb;
+    private DB jongo;
+    MongoCollection clientes;
 
     public ClienteDAO(){
 
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("clientes");
+        jdb = new MongoClient("172.16.105.58", 27017);
+        jongo = jdb.getDB( "vetline" );
+        Jongo jog = new Jongo(jongo);
+        clientes = jog.getCollection("clientes");
     }
 
     @Override
     public boolean inserir(Cliente cliente) {
         try {
-
-            collection.insert(cliente);
+            clientes.insert(cliente);
 
 
             return true;
@@ -61,8 +62,11 @@ public class ClienteDAO implements GenericDao<Cliente> {
     @Override
     public Cliente buscar(Cliente cliente) {
         try{
-            Cliente c = collection.findOne("{login: #}",cliente.getLogin()).as(Cliente.class);
 
+            Cliente c = clientes.findOne("{login: #}",cliente.getLogin()).as(Cliente.class);
+
+            System.out.println(c.getUf());
+            System.out.println(c.getBairro());
             return c;
 
         }catch (Exception e){
@@ -73,15 +77,15 @@ public class ClienteDAO implements GenericDao<Cliente> {
     public ArrayList<Cliente> buscarTodos(){
         try{
 
-            MongoCursor<Cliente> cursor =  collection.find("{}").as(Cliente.class);
-            final ArrayList<Cliente> array = new ArrayList<>();
+            //MongoCursor<Cliente> cursor =  collection.find("{}").as(Cliente.class);
+            //final ArrayList<Cliente> array = new ArrayList<>();
 
-            for(Cliente c:cursor){
+            //for(Cliente c:cursor){
 
-                array.add(c);
-            }
+            //    array.add(c);
+           // }
 
-            return array;
+            return null;
 
         }catch (Exception e){
             e.printStackTrace();

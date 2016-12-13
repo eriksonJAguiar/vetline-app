@@ -18,7 +18,9 @@ public class CFazerLogin {
             Cliente c = new Cliente();
             c.setLogin(u.getLogin());
             c.setSenha(u.getSenha());
-            if(!dao.buscar(c).getLogin().isEmpty())
+            Cliente aux = dao.buscar(c);
+
+            if(aux.getLogin().equals(c.getLogin()))
                 return true;
 
             return false;
