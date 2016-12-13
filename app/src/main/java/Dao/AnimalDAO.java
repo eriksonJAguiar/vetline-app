@@ -36,6 +36,7 @@ public class AnimalDAO implements GenericDao<Animal> {
             coll.insert(animal);
             return true;
         }catch (Exception e){
+            e.printStackTrace();
             return false;
         }
 

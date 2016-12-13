@@ -3,6 +3,7 @@ package com.app.vetline.vetline;
 import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -19,6 +20,7 @@ import controller.CCadastrarAnimal;
 import controller.CCadastrarCliente;
 import model.Animal;
 import model.Cliente;
+import model.Usuario;
 
 /**
  * Created by ProBook on 06/12/2016.
@@ -30,7 +32,13 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastrar_animal);
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
         getSupportActionBar().hide();
+
+        final Usuario user = Usuario.getInstance();
 
 
         List<String> tamanhos = new ArrayList<String>();
@@ -94,10 +102,10 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
                     if (animalOb.getTamanho().isEmpty()) {
                         throw new Exception("Numero vazio!");
                     }
-
+                    animalOb.setDono(user.login);
 
                     CCadastrarAnimal CCadastrarAnimal = new CCadastrarAnimal();
-                    if (CCadastrarAnimal.CadastrarAnimal(animalOb)) {
+                    if (CCadastrarAnimal.cadastrarAnimal(animalOb)) {
                         final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
                         camposVet2.setVisibility(View.VISIBLE);
                         camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
@@ -106,7 +114,7 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
                         msg.setTextColor(Color.parseColor("#3c763d"));
                         msg.setText("SUCESSO: Cadastrado com sucesso");
 
-                        final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
+                        final View animatedView2 = (View) findViewById(R.id.btn_cadastraranimal);
                         final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
                         ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
                         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -120,11 +128,9 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
                         animator.start();
                     }
                 else {
-                    try {
+
                         throw new Exception("Nao e possivel cadastrar");
-                    } catch (Exception e1) {
-                        e1.printStackTrace();
-                    }
+
                 }
 
                 }catch (Exception e){
@@ -136,7 +142,7 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
                     msg.setTextColor(Color.parseColor("#a94442"));
                     msg.setText("ERROR: "+e.getMessage());
 
-                    final View animatedView2 = (View) findViewById(R.id.btn_cadastar);
+                    final View animatedView2 = (View) findViewById(R.id.btn_cadastraranimal);
                     final LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) animatedView2.getLayoutParams();
                     ValueAnimator animator = ValueAnimator.ofInt(params.topMargin, params.WRAP_CONTENT);
                     animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

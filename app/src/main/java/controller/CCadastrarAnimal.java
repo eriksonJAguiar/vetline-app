@@ -14,7 +14,7 @@ public class CCadastrarAnimal {
 
     AnimalDAO dao = new AnimalDAO();
 
-    public boolean CadastrarAnimal(Animal a) { // conectar com o banco para cadatrar um novo animal
+    public boolean cadastrarAnimal(Animal a) { // conectar com o banco para cadatrar um novo animal
 
         if(dao.inserir(a))
             return true;
