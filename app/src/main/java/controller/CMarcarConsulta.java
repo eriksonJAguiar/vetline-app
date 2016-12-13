@@ -5,10 +5,12 @@ import java.util.List;
 
 import Dao.ConsultaDAO;
 import Dao.ItemConsultaDAO;
+import model.Animal;
 import model.Consulta;
 import model.ItemConsulta;
 import model.Observado;
 import model.Observador;
+import model.Veterinario;
 
 /**
  * Created by UltronI7 on 06/12/2016.
@@ -75,5 +77,12 @@ public class CMarcarConsulta implements Observado {
 
         return false;
     }
+    public Animal selecionaAnimal(int index,ArrayList<Animal> list){
+        return list.get(index);
+    }
+    public Veterinario selecionaVeterinario(int index, ArrayList<Veterinario> list){
+        return list.get(index);
+    }
+
 
 }

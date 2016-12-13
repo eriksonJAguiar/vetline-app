@@ -29,6 +29,7 @@ public class Veterinario  implements Serializable{
     private String uf;
     private String login;
     private String senha;
+    private boolean disponivel;
 
     public Veterinario(){
         banco = "";
@@ -44,6 +45,7 @@ public class Veterinario  implements Serializable{
         uf = "";
         login = "";
         senha = "";
+        disponivel = true;
     }
 
     public String getNome() {
@@ -151,5 +153,13 @@ public class Veterinario  implements Serializable{
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 }

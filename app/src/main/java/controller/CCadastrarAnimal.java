@@ -1,5 +1,8 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Dao.AnimalDAO;
 import model.Animal;
 
@@ -18,5 +21,9 @@ public class CCadastrarAnimal {
 
         return false;
     }
+    public ArrayList<Animal> BuscarAnimal(String dono){
 
+        return dao.buscar(dono);
+
+    }
 }

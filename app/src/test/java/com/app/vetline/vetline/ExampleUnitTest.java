@@ -31,7 +31,9 @@ import model.Animal;
 import model.AnimalAlergia;
 import model.AnimalVacina;
 import model.Cliente;
+import model.Consulta;
 import model.HospitalVeterinario;
+import model.ItemConsulta;
 import model.Usuario;
 import model.Vacina;
 import model.Veterinario;
@@ -46,7 +48,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-        assertTrue(cadatrarVacinas());
+        assertTrue(marcarConsulta());
     }
     public boolean gravou(){
 
@@ -329,9 +331,53 @@ public class ExampleUnitTest {
     public boolean marcarConsulta(){
         CMarcarConsulta cm = new CMarcarConsulta();
         CPesquisarVeterinario pesquisaVets = new CPesquisarVeterinario();
+        CCadastrarAnimal cAnimal = new CCadastrarAnimal();
+        Consulta consulta = new Consulta();
+        ItemConsulta item = new ItemConsulta();
 
-        //Veterinario v =
+        String localidade  = "Santa Mariana";
+        Usuario user = Usuario.getInstance();
 
+        user.setLogin("erikson");
+
+        ArrayList<Animal> lAnimal = cAnimal.BuscarAnimal(user.getLogin());
+
+
+        ArrayList<Veterinario> vet = pesquisaVets.pesquisarVeterinario(localidade);
+
+        item.setAnimal(cm.selecionaAnimal(0,lAnimal));
+        Date date = new Date();
+        item.setDataConsulta(date);
+        consulta.setLocal(localidade);
+        consulta.setDescricao("O animal está com a pata machucada");
+        consulta.setTipoPagamento("Cartão Visa");
+        item.setConsulta(consulta);
+        item.setVeterinario(cm.selecionaVeterinario(0,vet));
+
+        //verifica a disponibilidade do veterinario
+        if(!item.getVeterinario().isDisponivel()){
+            System.out.println("Veterinario sobrecarredo");
+            return false;
+        }
+
+        if(cm.marcarConsulta(item)){
+            System.out.println("Consulta Marcada com sucesso");
+            return true;
+        }
+        else{
+            System.out.println("Erro ao Marcar Consulta");
+            return false;
+        }
+
+    }
+    public boolean verHistoricoDeConsultas(){
+        return false;
+    }
+    public boolean consultarAgenda(){
+        return false;
+    }
+    public boolean notificarConsulta(){
+        return false;
     }
 
 }

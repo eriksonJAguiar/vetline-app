@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TimePicker;
 
+import java.util.Date;
+
 import controller.CCadastrarConsulta;
 import model.Consulta;
 
@@ -42,7 +44,7 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
 
                 String sintomasStr = sintomas.getText().toString();
                 String horaStr = String.valueOf(hora.getHour() + ":" + hora.getMinute());
-                String datas = String.valueOf(data.getDayOfMonth() + "/" + data.getMonth() + "/" + data.getYear());
+                Date datas = new Date();
 
                 CCadastrarConsulta cCadastrarConsulta = new CCadastrarConsulta();
                 Consulta consul = new Consulta();
@@ -50,7 +52,6 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
                 if (debito.isChecked()){
                     consul.setDataconsulta(datas);
                     consul.setDescricao(sintomasStr);
-                    consul.setHora(horaStr);
                     consul.setTipoPagamento("debito");
 
                     cCadastrarConsulta.CadastrarConsulta(consul);
@@ -60,7 +61,6 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
                 else if(boleto.isChecked()){
                     consul.setDataconsulta(datas);
                     consul.setDescricao(sintomasStr);
-                    consul.setHora(horaStr);
                     consul.setTipoPagamento("boleto");
 
                     cCadastrarConsulta.CadastrarConsulta(consul);

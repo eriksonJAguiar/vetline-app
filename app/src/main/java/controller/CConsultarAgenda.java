@@ -1,9 +1,12 @@
 package controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Dao.ConsultaDAO;
+import Dao.ItemConsultaDAO;
 import model.Consulta;
+import model.ItemConsulta;
 import model.Veterinario;
 
 /**
@@ -12,13 +15,15 @@ import model.Veterinario;
 
 public class CConsultarAgenda {
 
-    ConsultaDAO dao = new ConsultaDAO();
+    ItemConsultaDAO dao;
+
+    private CConsultarAgenda(){
+       dao = new ItemConsultaDAO();
+    }
 
 
-    public List<Consulta> ConsultaAgenda(Veterinario v) { // conectar com o banco para buscar as consultas agendadas do veterinario
+    public ArrayList<ItemConsulta> ConsultaAgenda(Veterinario v) { // conectar com o banco para buscar as consultas agendadas do veterinario
 
-
-
-        return null;
+           return dao.buscar(v.getLogin(),false);
     }
 }

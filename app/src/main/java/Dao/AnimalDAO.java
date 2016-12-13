@@ -7,6 +7,7 @@ import com.mongodb.MongoClient;
 
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
+import org.jongo.MongoCursor;
 
 import java.util.ArrayList;
 
@@ -58,6 +59,23 @@ public class AnimalDAO implements GenericDao<Animal> {
             Animal a = collection.findOne("{pedigree: #}",animal.getPedigree()).as(Animal.class);
 
             return a;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public  ArrayList<Animal> buscar(String dono){
+        try{
+            MongoCursor<Animal> a = collection.find("{dono: #}",dono).as(Animal.class);
+
+            ArrayList<Animal> alist = new ArrayList<>();
+
+            for (Animal an:a){
+                alist.add(an);
+            }
+
+            return alist;
 
         }catch (Exception e){
             e.printStackTrace();

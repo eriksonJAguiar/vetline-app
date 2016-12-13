@@ -1,8 +1,12 @@
 package controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import Dao.ItemConsultaDAO;
+import model.Cliente;
 import model.Consulta;
+import model.ItemConsulta;
 import model.Veterinario;
 
 /**
@@ -11,8 +15,14 @@ import model.Veterinario;
 
 public class CHistoricoConsultas {
 
-    public List<Consulta> buscaHistorico(Veterinario v){ //busca no banco os dados das consultas do veterinario
+    private ItemConsultaDAO daoIt;
 
-        return null;
+    public CHistoricoConsultas(){
+        daoIt = new ItemConsultaDAO();
+    }
+
+    public ArrayList<ItemConsulta> buscaHistorico(String loginCliente){ //busca no banco os dados das consultas do veterinario
+
+        return daoIt.buscar(loginCliente);
     }
 }
