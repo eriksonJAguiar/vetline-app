@@ -25,24 +25,21 @@ import model.Cliente;
 public class ClienteDAO implements GenericDao<Cliente> {
 
 
-    private MongoClient jdb;
-    private DB jongo;
-    MongoCollection clientes;
+    private  Connection c;
+    MongoCollection coll;
 
     public ClienteDAO(){
 
-        jdb = new MongoClient("172.16.105.58", 27017);
-        jongo = jdb.getDB( "vetline" );
-        Jongo jog = new Jongo(jongo);
-        clientes = jog.getCollection("clientes");
+        c = new Connection("clientes");
+        coll = c.getCollection();
+
     }
 
     @Override
     public boolean inserir(Cliente cliente) {
         try {
-            clientes.insert(cliente);
 
-
+            coll.insert(cliente);
             return true;
         }catch (Exception e){
             e.printStackTrace();
@@ -63,7 +60,7 @@ public class ClienteDAO implements GenericDao<Cliente> {
     public Cliente buscar(Cliente cliente) {
         try{
 
-            Cliente c = clientes.findOne("{login: #}",cliente.getLogin()).as(Cliente.class);
+            Cliente c = coll.findOne("{login: #}",cliente.getLogin()).as(Cliente.class);
 
             System.out.println(c.getUf());
             System.out.println(c.getBairro());
