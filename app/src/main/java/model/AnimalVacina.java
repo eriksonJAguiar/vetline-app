@@ -1,7 +1,5 @@
 package model;
 
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Reference;
 
 import java.util.Date;
 
@@ -9,13 +7,10 @@ import java.util.Date;
  * Created by root on 05/12/16.
  */
 
-@Entity(value = "animalVacina")
 public class AnimalVacina {
 
-    @Reference
     private Animal animal;
 
-    @Reference
     private Vacina vancina;
 
 

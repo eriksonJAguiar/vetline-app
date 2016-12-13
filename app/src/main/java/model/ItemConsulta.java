@@ -1,7 +1,5 @@
 package model;
 
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Reference;
 
 import java.util.Date;
 
@@ -9,7 +7,6 @@ import java.util.Date;
  * Created by root on 05/12/16.
  */
 
-@Entity(value = "itemConsulta")
 public class ItemConsulta {
 
 
@@ -17,13 +14,10 @@ public class ItemConsulta {
     private Date dataConsulta;
     private double preco;
 
-    @Reference
     private Veterinario veterinario;
 
-    @Reference
     private Consulta consulta;
 
-    @Reference
     private Animal animal;
 
     public ItemConsulta(){

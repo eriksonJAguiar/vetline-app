@@ -1,8 +1,7 @@
 package model;
 
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
+
 
 import java.io.Serializable;
 
@@ -10,10 +9,9 @@ import java.io.Serializable;
  * Created by root on 05/12/16.
  */
 
-@Entity(value = "alergias")
 public class Alergia implements Serializable{
 
-    @Id
+
     private ObjectId codAlergia;
 
     private String alergia;

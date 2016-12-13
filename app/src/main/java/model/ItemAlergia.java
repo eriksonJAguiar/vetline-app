@@ -1,6 +1,5 @@
 package model;
 
-import org.mongodb.morphia.annotations.Reference;
 
 import java.util.Date;
 
@@ -9,10 +8,8 @@ import java.util.Date;
  */
 public class ItemAlergia {
 
-    @Reference
     private Alergia alergia;
 
-    @Reference
     private Animal animal;
 
     private Date dataCadastro;

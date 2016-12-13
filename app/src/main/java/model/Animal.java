@@ -1,9 +1,6 @@
 package model;
 
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
-import org.mongodb.morphia.annotations.Reference;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -12,10 +9,9 @@ import java.util.ArrayList;
 /**
  * Created by root on 05/12/16.
  */
-@Entity(value = "animal")
 public class Animal {
 
-    @Id
+
     private ObjectId _id;
 
     private String nome;
@@ -24,7 +20,7 @@ public class Animal {
     private String tamanho ;
     private String genero;
 
-    @Reference
+
     private String dono;
 
 
