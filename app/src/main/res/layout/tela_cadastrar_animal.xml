@@ -197,7 +197,36 @@
                     android:background="@android:drawable/editbox_background"
                     android:layout_height="50dp" />
             </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mensagens"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
 
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="1dp"
+                android:visibility="invisible"
+                android:background="@drawable/screen_border_falha">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msg"
+                    android:layout_weight="0.02"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#3c763d" />
+            </LinearLayout>
             <Button
         android:text="Cadastrar"
         android:layout_width="match_parent"
