@@ -13,10 +13,12 @@ import android.widget.RelativeLayout;
 
 import com.google.android.gms.vision.text.Line;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import controller.CConsultarAgenda;
 import model.Consulta;
+import model.ItemConsulta;
 import model.Vacina;
 import model.Veterinario;
 
@@ -35,11 +37,11 @@ public class Tela_mostrar_agenda_veterinario extends AppCompatActivity {
         Veterinario v = new Veterinario();
 
         CConsultarAgenda CConsultarAgenda = new CConsultarAgenda();
-        List<Consulta> consultas = CConsultarAgenda.ConsultaAgenda(v);
+        ArrayList<ItemConsulta> consultas = CConsultarAgenda.ConsultaAgenda(v);
         ListView lista_consultas = (ListView) findViewById(R.id.lista_consultas);
-        ArrayAdapter<Consulta> adapter = new ArrayAdapter<Consulta>(this,
+        /*ArrayAdapter<Consulta> adapter = new ArrayAdapter<Consulta>(this,
                 android.R.layout.simple_list_item_1, consultas);
-        lista_consultas.setAdapter(adapter);
+        lista_consultas.setAdapter(adapter);*/
 
     }
 }

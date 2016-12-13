@@ -17,7 +17,7 @@ public class CConsultarAgenda {
 
     ItemConsultaDAO dao;
 
-    private CConsultarAgenda(){
+    public CConsultarAgenda(){
        dao = new ItemConsultaDAO();
     }
 

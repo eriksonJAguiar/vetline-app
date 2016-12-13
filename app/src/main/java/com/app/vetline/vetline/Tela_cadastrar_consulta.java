@@ -52,7 +52,7 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
                 if (debito.isChecked()){
                     consul.setDataconsulta(datas);
                     consul.setDescricao(sintomasStr);
-                    consul.setTipoPagamento("debito");
+
 
                     cCadastrarConsulta.CadastrarConsulta(consul);
 
@@ -61,7 +61,7 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
                 else if(boleto.isChecked()){
                     consul.setDataconsulta(datas);
                     consul.setDescricao(sintomasStr);
-                    consul.setTipoPagamento("boleto");
+
 
                     cCadastrarConsulta.CadastrarConsulta(consul);
 

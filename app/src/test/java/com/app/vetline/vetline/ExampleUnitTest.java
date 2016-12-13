@@ -350,7 +350,6 @@ public class ExampleUnitTest {
         item.setDataConsulta(date);
         consulta.setLocal(localidade);
         consulta.setDescricao("O animal está com a pata machucada");
-        consulta.setTipoPagamento("Cartão Visa");
         item.setConsulta(consulta);
         item.setVeterinario(cm.selecionaVeterinario(0,vet));
 
