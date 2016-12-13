@@ -20,22 +20,20 @@ import model.ItemConsulta;
  */
 
 public class ItemConsultaDAO implements GenericDao<ItemConsulta> {
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
 
+    private Connection c;
+    private MongoCollection mcol;
 
     public ItemConsultaDAO(){
 
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("item_consulta");
+       c = new Connection("ItemConsulta");
+        mcol = c.getCollection();
     }
     @Override
     public boolean inserir(ItemConsulta itemConsulta) {
 
         try{
-            collection.insert(itemConsulta);
+            mcol.insert(itemConsulta);
             return true;
         }catch (Exception e){
             return false;
@@ -59,7 +57,7 @@ public class ItemConsultaDAO implements GenericDao<ItemConsulta> {
 
     public ArrayList<ItemConsulta> buscar(String login){
         try{
-            MongoCursor<ItemConsulta> cursor = collection.find("animal.dono: #",login).as(ItemConsulta.class);
+            MongoCursor<ItemConsulta> cursor = mcol.find("animal.dono: #",login).as(ItemConsulta.class);
 
             ArrayList<ItemConsulta> itens = new ArrayList<>();
 
@@ -73,7 +71,7 @@ public class ItemConsultaDAO implements GenericDao<ItemConsulta> {
     }
     public ArrayList<ItemConsulta> buscar(String login, boolean realizada){
         try{
-            MongoCursor<model.ItemConsulta> cursor = collection.find("animal.dono: #, consulta.realizada: #",login,realizada).as(model.ItemConsulta.class);
+            MongoCursor<model.ItemConsulta> cursor = mcol.find("animal.dono: #, consulta.realizada: #",login,realizada).as(model.ItemConsulta.class);
 
             ArrayList<model.ItemConsulta> itens = new ArrayList<>();
 

@@ -3,9 +3,12 @@ package controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import Dao.AnimalDAO;
 import Dao.ConsultaDAO;
 import Dao.ItemConsultaDAO;
+import Dao.VeterinarioDAO;
 import model.Animal;
+import model.Cliente;
 import model.Consulta;
 import model.ItemConsulta;
 import model.Observado;
@@ -18,11 +21,14 @@ import model.Veterinario;
 
 public class CMarcarConsulta implements Observado {
 
-    ConsultaDAO dao;
-    ItemConsultaDAO daoItem;
+    private ConsultaDAO dao;
+    private ItemConsultaDAO daoItem;
+    private AnimalDAO daoAnimal;
+    private VeterinarioDAO vDao;
 
     private List<Observador> observadores;
     private List<Consulta> consultas;
+
 
 
     public CMarcarConsulta(){
@@ -30,6 +36,8 @@ public class CMarcarConsulta implements Observado {
         consultas = new ArrayList<>();
         dao = new ConsultaDAO();
         daoItem = new ItemConsultaDAO();
+        daoAnimal = new AnimalDAO();
+        vDao = new VeterinarioDAO();
     }
 
     /*public void marcar(Consulta c){
@@ -78,10 +86,14 @@ public class CMarcarConsulta implements Observado {
         return false;
     }
     public Animal selecionaAnimal(int index,ArrayList<Animal> list){
+
         return list.get(index);
     }
     public Veterinario selecionaVeterinario(int index, ArrayList<Veterinario> list){
         return list.get(index);
+    }
+    public ArrayList<Animal> PesquisaAnimal(String login){
+        return daoAnimal.buscar(login);
     }
 
 

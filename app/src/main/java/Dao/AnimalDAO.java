@@ -19,21 +19,21 @@ import model.Cliente;
  */
 
 public class AnimalDAO implements GenericDao<Animal> {
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
+
+    private  Connection c;
+    MongoCollection coll;
+
 
 
     public AnimalDAO(){
 
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("animais");
+        c = new Connection("animais");
+        coll = c.getCollection();
     }
     @Override
     public boolean inserir(Animal animal) {
         try{
-            collection.insert(animal);
+            coll.insert(animal);
             return true;
         }catch (Exception e){
             return false;
@@ -56,7 +56,7 @@ public class AnimalDAO implements GenericDao<Animal> {
     @Override
     public Animal buscar(Animal animal) {
         try{
-            Animal a = collection.findOne("{pedigree: #}",animal.getPedigree()).as(Animal.class);
+            Animal a = coll.findOne("{pedigree: #}",animal.getPedigree()).as(Animal.class);
 
             return a;
 
@@ -67,7 +67,7 @@ public class AnimalDAO implements GenericDao<Animal> {
     }
     public  ArrayList<Animal> buscar(String dono){
         try{
-            MongoCursor<Animal> a = collection.find("{dono: #}",dono).as(Animal.class);
+            MongoCursor<Animal> a = coll.find("{dono: #}",dono).as(Animal.class);
 
             ArrayList<Animal> alist = new ArrayList<>();
 
