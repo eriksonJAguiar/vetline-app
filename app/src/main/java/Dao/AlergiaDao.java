@@ -20,14 +20,14 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
  * Created by root on 10/12/16.
  */
 
-public class AlergiaDao implements GenericDao<Alergia> {
+public class AlergiaDAO implements GenericDAO<Alergia> {
 
 
     private DB jdb;
     private Jongo jongo;
     private MongoCollection collection;
 
-    public AlergiaDao() {
+    public AlergiaDAO() {
         jdb = new MongoClient().getDB("vetline");
         jongo = new Jongo(jdb);
         collection = jongo.getCollection("alergias");

@@ -17,7 +17,7 @@ import model.Cliente;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
+public class AnimalAlegiaDAO implements GenericDAO<AnimalAlergia> {
 
 
     private DB jdb;

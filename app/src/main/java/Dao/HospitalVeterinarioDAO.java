@@ -1,17 +1,38 @@
 package Dao;
 
-import model.Cliente;
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+
+import org.jongo.Jongo;
+import org.jongo.MongoCollection;
+
 import model.HospitalVeterinario;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class HospitalVeterinarioDAO implements GenericDao<HospitalVeterinario> {
+public class HospitalVeterinarioDAO implements GenericDAO<HospitalVeterinario> {
 
+    private DB jdb;
+    private Jongo jongo;
+    private MongoCollection collection;
+
+
+    public HospitalVeterinarioDAO(){
+
+        jdb = new MongoClient().getDB("vetline");
+        jongo = new Jongo(jdb);
+        collection = jongo.getCollection("hospital_veterinario");
+    }
     @Override
     public boolean inserir(HospitalVeterinario hospitalVeterinario) {
-        return false;
+        try{
+            collection.insert(hospitalVeterinario);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     @Override

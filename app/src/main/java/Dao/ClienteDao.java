@@ -29,7 +29,7 @@ import model.Cliente;
  * Created by root on 05/12/16.
  */
 
-public class ClienteDao implements GenericDao<Cliente> {
+public class ClienteDAO implements GenericDAO<Cliente> {
 
 
     private DB jdb;
@@ -37,7 +37,7 @@ public class ClienteDao implements GenericDao<Cliente> {
     private MongoCollection collection;
 
 
-    public ClienteDao(){
+    public ClienteDAO(){
 
         jdb = new MongoClient().getDB("vetline");
         jongo = new Jongo(jdb);

@@ -1,17 +1,40 @@
 package Dao;
 
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+
+import org.jongo.Jongo;
+import org.jongo.MongoCollection;
+
 import model.CartaoCredito;
-import model.Cliente;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class CartaoCreditoDAO implements GenericDao<CartaoCredito> {
+public class CartaoCreditoDAO implements GenericDAO<CartaoCredito> {
 
+    private DB jdb;
+    private Jongo jongo;
+    private MongoCollection collection;
+
+
+    public CartaoCreditoDAO(){
+
+        jdb = new MongoClient().getDB("vetline");
+        jongo = new Jongo(jdb);
+        collection = jongo.getCollection("clientes");
+    }
     @Override
     public boolean inserir(CartaoCredito cartaoCredito) {
-        return false;
+        try{
+            collection.insert(cartaoCredito);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+
+
     }
 
     @Override

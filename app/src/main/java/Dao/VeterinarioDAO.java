@@ -2,21 +2,36 @@ package Dao;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
 
-import model.Cliente;
+import org.jongo.Jongo;
+import org.jongo.MongoCollection;
+
 import model.Veterinario;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class VeterinarioDAO implements GenericDao<Veterinario> {
+public class VeterinarioDAO implements GenericDAO<Veterinario> {
+    private DB jdb;
+    private Jongo jongo;
+    private MongoCollection collection;
+
+
+    public VeterinarioDAO(){
+
+        jdb = new MongoClient().getDB("vetline");
+        jongo = new Jongo(jdb);
+        collection = jongo.getCollection("veterinarioa");
+    }
 
     @Override
     public boolean inserir(Veterinario veterinario) {
 
         try{
-
+/*
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference myRef = database.getReference();
 
@@ -29,8 +44,9 @@ public class VeterinarioDAO implements GenericDao<Veterinario> {
             myRef.child("Veterinarios").child(veterinario.getLogin()).child("numero_conta").setValue(veterinario.getNumConta());
             myRef.child("Veterinarios").child(veterinario.getLogin()).child("senha").setValue(veterinario.getSenha());
             myRef.child("Veterinarios").child(veterinario.getLogin()).child("operacao").setValue(veterinario.getOperacao());
-            return true;
-
+            return true;*/
+                collection.insert(veterinario);
+        return true;
         }catch (Exception e){
             return false;
         }

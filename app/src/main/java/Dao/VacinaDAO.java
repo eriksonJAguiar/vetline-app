@@ -1,17 +1,39 @@
 package Dao;
 
-import model.Cliente;
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+
+import org.jongo.Jongo;
+import org.jongo.MongoCollection;
+
 import model.Vacina;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class VacinaDAO implements GenericDao<Vacina> {
+public class VacinaDAO implements GenericDAO<Vacina> {
+    private DB jdb;
+    private Jongo jongo;
+    private MongoCollection collection;
+
+
+    public VacinaDAO(){
+
+        jdb = new MongoClient().getDB("vetline");
+        jongo = new Jongo(jdb);
+        collection = jongo.getCollection("vacinas");
+    }
 
     @Override
     public boolean inserir(Vacina vacina) {
-        return false;
+
+        try{
+            collection.insert(vacina);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     @Override
