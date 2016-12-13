@@ -23,7 +23,7 @@ public class Tela_mostrar_alergias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_mostrar_alergias);
         getSupportActionBar().hide();
-
+/*
         Animal animal = new Animal(); // recebe o animal da tela anterior
         Animal animalTela = new Animal(); // recebe o animal da tela anterior
         CDadosAnimal cDadosAnimal = new CDadosAnimal();
@@ -34,7 +34,7 @@ public class Tela_mostrar_alergias extends AppCompatActivity {
 
         nomeAnimal.setText("NOME:" + animalTela.getNome());
         racaAnimal.setText("RAÇA:" + animalTela.getRaca());
-
+*/
         /*Carrega uma listview com botãos
         *
         *

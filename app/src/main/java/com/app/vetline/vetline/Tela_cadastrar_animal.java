@@ -102,7 +102,6 @@ public class Tela_cadastrar_animal extends AppCompatActivity {
                     if (animalOb.getTamanho().isEmpty()) {
                         throw new Exception("Numero vazio!");
                     }
-                    animalOb.setDono(user.login);
 
                     CCadastrarAnimal CCadastrarAnimal = new CCadastrarAnimal();
                     if (CCadastrarAnimal.cadastrarAnimal(animalOb)) {

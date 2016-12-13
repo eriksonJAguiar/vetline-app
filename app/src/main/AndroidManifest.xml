@@ -40,6 +40,7 @@
         <activity android:name=".Tela_mostrar_consultas_animal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_mostrar_vacinas" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
         <activity android:name=".Tela_pagina_principal" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_pagina_principal_vet" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"/>
 
 
         <!--

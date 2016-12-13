@@ -3,10 +3,6 @@ package Dao;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 
-import org.jongo.Jongo;
-import org.jongo.MongoCollection;
-import org.jongo.MongoCursor;
-
 import java.util.ArrayList;
 
 import model.Animal;
@@ -20,14 +16,9 @@ import model.Cliente;
 public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
 
 
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
 
     public AnimalAlegiaDAO(){
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("animalAlergia");
+
     }
 
 
@@ -35,7 +26,7 @@ public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
     public boolean inserir(AnimalAlergia animalAlergia) {
         try {
 
-            collection.insert(animalAlergia);
+            //collection.insert(animalAlergia);
 
             return true;
         }catch (Exception e){
@@ -58,9 +49,9 @@ public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
     @Override
     public AnimalAlergia buscar(AnimalAlergia animalAlergia) {
         try{
-            AnimalAlergia al = collection.findOne("{animal: #, alegia:#}",animalAlergia.getAnimal(),animalAlergia.getAlergia()).as(AnimalAlergia.class);
+            //AnimalAlergia al = collection.findOne("{animal: #, alegia:#}",animalAlergia.getAnimal(),animalAlergia.getAlergia()).as(AnimalAlergia.class);
 
-            return al;
+            return animalAlergia;
 
         }catch (Exception e){
             e.printStackTrace();
@@ -70,15 +61,9 @@ public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
     public ArrayList<AnimalAlergia> buscarTodos(){
         try{
 
-            MongoCursor<AnimalAlergia> cursor =  collection.find("{}").as(AnimalAlergia.class);
-            final ArrayList<AnimalAlergia> array = new ArrayList<>();
 
-            for(AnimalAlergia al:cursor){
 
-                array.add(al);
-            }
-
-            return array;
+            return null;
 
         }catch (Exception e){
             e.printStackTrace();

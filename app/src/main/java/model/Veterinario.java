@@ -20,9 +20,6 @@ public class Veterinario  implements Serializable{
     private String banco;
     private int operacao;
     private String email;
-    private String bairro;
-    private String cidade;
-    private String uf;
     private String login;
     private String senha;
     private boolean disponivel;
@@ -36,9 +33,6 @@ public class Veterinario  implements Serializable{
         numConta = 0;
         agencia = 0;
         email = "";
-        bairro = "";
-        cidade = "";
-        uf = "";
         login = "";
         senha = "";
         disponivel = true;
@@ -107,30 +101,6 @@ public class Veterinario  implements Serializable{
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
     }
 
     public String getLogin() {

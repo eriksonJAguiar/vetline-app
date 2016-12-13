@@ -38,9 +38,15 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
         getSupportActionBar().hide();
         Button btn_proximo = (Button) findViewById(R.id.btn_proximo);
         final Intent tela_mapa = new Intent(this, Tela_mapa.class);
+        btn_proximo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(tela_mapa);
+            }
+        });
 
 
-
+/*
         btn_proximo.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.M)
             @Override
@@ -109,6 +115,8 @@ public class Tela_cadastrar_consulta extends AppCompatActivity {
 
 
             }
+            *
         });
+        */
     }
 }

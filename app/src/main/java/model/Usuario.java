@@ -5,8 +5,8 @@ package model;
  */
 
 public class Usuario {
-    private String login;
-    private String senha;
+    public String login;
+    public String senha;
 
 
     private static Usuario novo = null;
@@ -16,7 +16,7 @@ public class Usuario {
         senha = "";
     }
 
-    public static Usuario getInstance(){
+    public static synchronized Usuario getInstance(){
         if(novo == null){
             return new Usuario();
         }

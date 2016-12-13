@@ -3,8 +3,6 @@ package Dao;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 
-import org.jongo.Jongo;
-import org.jongo.MongoCollection;
 
 import model.Consulta;
 
@@ -14,23 +12,18 @@ import model.Consulta;
 
 public class ConsultaDAO implements GenericDao<Consulta> {
 
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
+
 
 
     public ConsultaDAO(){
 
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("consultas");
+
     }
     @Override
     public boolean inserir(Consulta consulta) {
 
 
         try{
-            collection.insert(consulta);
             return true;
         }catch (Exception e){
             return false;

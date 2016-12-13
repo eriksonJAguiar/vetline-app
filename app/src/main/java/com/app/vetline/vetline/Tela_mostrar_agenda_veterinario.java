@@ -33,12 +33,13 @@ public class Tela_mostrar_agenda_veterinario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_mostrar_agenda_veterinario);
         getSupportActionBar().hide();
-
+    /*
         Veterinario v = new Veterinario();
 
         CConsultarAgenda CConsultarAgenda = new CConsultarAgenda();
         ArrayList<ItemConsulta> consultas = CConsultarAgenda.ConsultaAgenda(v);
         ListView lista_consultas = (ListView) findViewById(R.id.lista_consultas);
+        */
         /*ArrayAdapter<Consulta> adapter = new ArrayAdapter<Consulta>(this,
                 android.R.layout.simple_list_item_1, consultas);
         lista_consultas.setAdapter(adapter);*/

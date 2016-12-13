@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import controller.CFazerLogin;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
         }
         getSupportActionBar().hide();
+        final Switch campo_tipo_login = (Switch) findViewById(R.id.campo_tipo_perfil);
 
         final EditText campo_usuario1 = (EditText) findViewById(R.id.campo_nomeUsuario);
         final EditText campo_senha1 = (EditText) findViewById(R.id.campo_senha);
@@ -33,35 +35,58 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_logar1 = (Button) findViewById(R.id.btn_logar);
         final Button btn_cadastrar1 = (Button) findViewById(R.id.btn_cadastrar);
 
-        final Intent pagina_principal1 = new Intent(this, Tela_pagina_principal.class);
+        final Intent pagina_principalCliente = new Intent(this, Tela_pagina_principal.class);
+        final Intent pagina_principalVeterinario = new Intent(this, Tela_pagina_principal_vet.class);
         final Intent pagina_cadastro = new Intent(this, Tela_cadastrar_usuario.class);
 
         btn_logar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Usuario user = Usuario.getInstance();
-                CFazerLogin login = new CFazerLogin();
 
+                CFazerLogin login = new CFazerLogin();
                 user.setLogin(campo_usuario1.getText().toString());
                 user.setSenha(campo_senha1.getText().toString());
-                if(login.fazerLogin(user) == true){
-                    final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
-                    camposVet2.setVisibility(View.VISIBLE);
-                    camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
-                    camposVet2.setMinimumHeight(210);
-                    TextView msg = (TextView) findViewById(R.id.msg);
-                    msg.setTextColor(Color.parseColor("#a94442"));
-                    msg.setText("Logado com sucesso, Aguarde voce ta sendo redicionado!.");
-                    startActivity(pagina_principal1);
-                }else{
-                    final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
-                    camposVet2.setVisibility(View.VISIBLE);
-                    camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
-                    camposVet2.setMinimumHeight(210);
-                    TextView msg = (TextView) findViewById(R.id.msg);
-                    msg.setTextColor(Color.parseColor("#a94442"));
-                    msg.setText("ERROR: Usuario incorreto");
+                if(campo_tipo_login.isChecked()){
 
+                    if(login.fazerLoginVet(user)==true){
+                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                        camposVet2.setVisibility(View.VISIBLE);
+                        camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
+                        camposVet2.setMinimumHeight(210);
+                        TextView msg = (TextView) findViewById(R.id.msg);
+                        msg.setTextColor(Color.parseColor("#3c763d"));
+                        msg.setText("Logado com sucesso, Aguarde voce ta sendo redicionado!.");
+                        startActivity(pagina_principalVeterinario);
+                    }else{
+                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                        camposVet2.setVisibility(View.VISIBLE);
+                        camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
+                        camposVet2.setMinimumHeight(210);
+                        TextView msg = (TextView) findViewById(R.id.msg);
+                        msg.setTextColor(Color.parseColor("#a94442"));
+                        msg.setText("ERROR: Usuario incorreto");
+                    }
+                }else{
+                    if(login.fazerLogin(user) == true){
+                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                        camposVet2.setVisibility(View.VISIBLE);
+                        camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);
+                        camposVet2.setMinimumHeight(210);
+                        TextView msg = (TextView) findViewById(R.id.msg);
+
+                        msg.setTextColor(Color.parseColor("#3c763d"));
+                        msg.setText("Logado com sucesso, Aguarde voce ta sendo redicionado!.");
+                        startActivity(pagina_principalCliente);
+                    }else {
+                        final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
+                        camposVet2.setVisibility(View.VISIBLE);
+                        camposVet2.setBackgroundResource(R.drawable.screen_border_falha);
+                        camposVet2.setMinimumHeight(210);
+                        TextView msg = (TextView) findViewById(R.id.msg);
+                        msg.setTextColor(Color.parseColor("#a94442"));
+                        msg.setText("ERROR: Usuario incorreto");
+                    }
 
                 }
             }

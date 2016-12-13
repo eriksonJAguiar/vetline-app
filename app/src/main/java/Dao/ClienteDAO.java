@@ -62,8 +62,6 @@ public class ClienteDAO implements GenericDao<Cliente> {
 
             Cliente c = coll.findOne("{login: #}",cliente.getLogin()).as(Cliente.class);
 
-            System.out.println(c.getUf());
-            System.out.println(c.getBairro());
             return c;
 
         }catch (Exception e){

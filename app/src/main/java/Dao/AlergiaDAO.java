@@ -4,17 +4,11 @@ package Dao;
  * Created by root on 13/12/16.
  */
 
-import org.jongo.MongoCursor;
 
 import android.support.v7.app.AlertDialog;
 
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
-
-import org.jongo.Jongo;
-import org.jongo.MongoCollection;
-import org.jongo.MongoCursor;
-
 import java.util.ArrayList;
 
 import model.Alergia;
@@ -29,21 +23,14 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 public class AlergiaDAO implements GenericDao<Alergia> {
 
 
-    private DB jdb;
-    private Jongo jongo;
-    private MongoCollection collection;
-
     public AlergiaDAO() {
-        jdb = new MongoClient().getDB("vetline");
-        jongo = new Jongo(jdb);
-        collection = jongo.getCollection("alergias");
+
     }
 
     @Override
     public boolean inserir(Alergia alergia) {
         try {
 
-            collection.insert(alergia);
 
 
             return true;
@@ -66,7 +53,7 @@ public class AlergiaDAO implements GenericDao<Alergia> {
     @Override
     public Alergia buscar(Alergia alergia) {
         try{
-            Alergia a = collection.findOne("{codAlergia: #}",alergia.getCodAlergia()).as(Alergia.class);
+            Alergia a = alergia;
 
             return a;
 
@@ -78,13 +65,7 @@ public class AlergiaDAO implements GenericDao<Alergia> {
     public ArrayList<Alergia> buscarTodos(){
         try{
 
-            MongoCursor<Alergia> cursor =  collection.find("{}").as(Alergia.class);
             final ArrayList<Alergia> array = new ArrayList<>();
-
-            for(Alergia a:cursor){
-
-                array.add(a);
-            }
 
             return array;
 
