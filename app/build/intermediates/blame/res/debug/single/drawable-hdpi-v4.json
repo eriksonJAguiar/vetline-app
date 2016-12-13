@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_closed_caption_grey600_36.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-hdpi-v4/quantum_ic_closed_caption_grey600_36.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_forward_30_white_24.png",
@@ -24,12 +24,12 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/drawable-hdpi-v4/places_ic_clear.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_pause_white_24.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-hdpi-v4/quantum_ic_pause_white_24.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_tv_light.png",
@@ -52,12 +52,12 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-hdpi-v4/quantum_ic_volume_up_white_36.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/quantum_ic_art_track_grey600_48.png",

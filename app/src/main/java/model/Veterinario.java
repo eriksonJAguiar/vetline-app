@@ -1,10 +1,20 @@
 package model;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+
+import java.io.Serializable;
+
 /**
  * Created by root on 05/12/16.
  */
 
-public class Veterinario extends Usuario  {
+@Entity(value = "veterinario")
+public class Veterinario  implements Serializable{
+
+    @Id
+    private ObjectId _id;
 
     private String nome;
     private int crmv;
@@ -14,6 +24,11 @@ public class Veterinario extends Usuario  {
     private String banco;
     private int operacao;
     private String email;
+    private String bairro;
+    private String cidade;
+    private String uf;
+    private String login;
+    private String senha;
 
     public Veterinario(){
         banco = "";
@@ -24,6 +39,11 @@ public class Veterinario extends Usuario  {
         numConta = 0;
         agencia = 0;
         email = "";
+        bairro = "";
+        cidade = "";
+        uf = "";
+        login = "";
+        senha = "";
     }
 
     public String getNome() {
@@ -89,5 +109,47 @@ public class Veterinario extends Usuario  {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }

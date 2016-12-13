@@ -13,7 +13,7 @@ public class CClassificarConsulta {
 
     public boolean ClassificaConsulta(Consulta c) { // conectar com o banco para atualizar a classificação da consulta
 
-        dao.atualizar(c);
+        //dao.atualizar(c);
 
         return false;
     }

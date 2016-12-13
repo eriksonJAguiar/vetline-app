@@ -1,36 +1,51 @@
 package model;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.Reference;
+
+import java.util.Date;
+
 /**
  * Created by root on 05/12/16.
  */
 
+@Entity(value = "consulta")
 public class Consulta {
-    private String dataconsulta;
+
+    @Id
+    private ObjectId _id;
+
+    private Date data;
     private String descricao;
     private String local;
-    private double preco;
     private boolean status;
     private int classificacao;
-    private String hora;
     private String tipoPagamento;
+    private String diagnostico;
+    private boolean realizada;
+
+
 
     public Consulta(){
         descricao = "";
         local = "";
-        preco = 0.0;
         status = false;
         classificacao = 0;
-        hora="";
         setTipoPagamento("");
+        data = new Date();
+        diagnostico = "";
+        realizada = false;
     }
 
 
-    public String getDataconsulta() {
-        return dataconsulta;
+    public Date getDataconsulta() {
+        return data;
     }
 
-    public void setDataconsulta(String dataconsulta) {
-        this.dataconsulta = dataconsulta;
+    public void setDataconsulta(Date data) {
+        this.data = data;
     }
 
     public String getDescricao() {
@@ -49,13 +64,6 @@ public class Consulta {
         this.local = local;
     }
 
-    public double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
 
     public boolean isStatus() {
         return status;
@@ -74,19 +82,35 @@ public class Consulta {
     }
 
 
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
     public String getTipoPagamento() {
         return tipoPagamento;
     }
 
     public void setTipoPagamento(String tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getDiagnostico() {
+        return diagnostico;
+    }
+
+    public void setDiagnostico(String diagnostico) {
+        this.diagnostico = diagnostico;
+    }
+
+    public boolean isRealizada() {
+        return realizada;
+    }
+
+    public void setRealizada(boolean realizada) {
+        this.realizada = realizada;
     }
 }

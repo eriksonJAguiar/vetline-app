@@ -17,7 +17,7 @@ import model.Cliente;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class AnimalAlegiaDAO implements GenericDAO<AnimalAlergia> {
+public class AnimalAlegiaDAO implements GenericDao<AnimalAlergia> {
 
 
     private DB jdb;
@@ -27,7 +27,7 @@ public class AnimalAlegiaDAO implements GenericDAO<AnimalAlergia> {
     public AnimalAlegiaDAO(){
         jdb = new MongoClient().getDB("vetline");
         jongo = new Jongo(jdb);
-        collection = jongo.getCollection("animalAlergiaDao");
+        collection = jongo.getCollection("animalAlergia");
     }
 
 
@@ -45,9 +45,10 @@ public class AnimalAlegiaDAO implements GenericDAO<AnimalAlergia> {
     }
 
     @Override
-    public boolean atualizar(AnimalAlergia animalAlergia) {
+    public boolean atualizar(AnimalAlergia old, AnimalAlergia novo) {
         return false;
     }
+
 
     @Override
     public boolean excluir(AnimalAlergia animalAlergia) {

@@ -10,7 +10,7 @@ import java.io.Serializable;
  * Created by root on 05/12/16.*/
 
 @Entity(value = "clientes")
-public class Cliente extends Usuario implements Serializable{
+public class Cliente  implements Serializable{
 
     @Id
     private ObjectId _id;
@@ -23,6 +23,8 @@ public class Cliente extends Usuario implements Serializable{
     private int numero;
     private String cidade;
     private String uf;
+    private String login;
+    private String senha;
 
     public Cliente(){
         nome = "";
@@ -30,9 +32,11 @@ public class Cliente extends Usuario implements Serializable{
         cpf = "";
         endereco = "";
         bairro = "";
-        numero = 0;
         cidade = "";
         uf = "";
+        senha = "";
+        login = "";
+        numero = 0;
     }
 
     public String getNome() {
@@ -100,4 +104,19 @@ public class Cliente extends Usuario implements Serializable{
         this.email = email;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 }

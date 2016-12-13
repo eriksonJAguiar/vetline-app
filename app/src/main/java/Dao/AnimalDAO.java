@@ -8,6 +8,8 @@ import com.mongodb.MongoClient;
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
 
+import java.util.ArrayList;
+
 import model.Animal;
 import model.Cliente;
 
@@ -15,7 +17,7 @@ import model.Cliente;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class AnimalDAO implements GenericDAO<Animal> {
+public class AnimalDAO implements GenericDao<Animal> {
     private DB jdb;
     private Jongo jongo;
     private MongoCollection collection;
@@ -40,9 +42,10 @@ public class AnimalDAO implements GenericDAO<Animal> {
     }
 
     @Override
-    public boolean atualizar(   Animal animal) {
+    public boolean atualizar(Animal old, Animal novo) {
         return false;
     }
+
 
     @Override
     public boolean excluir(Animal animal) {
@@ -51,6 +54,14 @@ public class AnimalDAO implements GenericDAO<Animal> {
 
     @Override
     public Animal buscar(Animal animal) {
-        return null;
+        try{
+            Animal a = collection.findOne("{pedigree: #}",animal.getPedigree()).as(Animal.class);
+
+            return a;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

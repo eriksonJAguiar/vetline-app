@@ -32,7 +32,7 @@ public class Tela_redefinir_senha extends AppCompatActivity {
                 try{
                     String valor = findViewById(R.id.campo).toString();
                     CRedefinirSenha CRedefinirSenha = new CRedefinirSenha();
-                    Usuario a = new Usuario();
+                    Usuario a = Usuario.getInstance();
                     a.setLogin(valor);
                     CRedefinirSenha.buscaUsuario(a);
 

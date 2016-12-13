@@ -12,7 +12,7 @@ import model.CartaoCredito;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class CartaoCreditoDAO implements GenericDAO<CartaoCredito> {
+public class CartaoCreditoDAO implements GenericDao<CartaoCredito> {
 
     private DB jdb;
     private Jongo jongo;
@@ -38,7 +38,7 @@ public class CartaoCreditoDAO implements GenericDAO<CartaoCredito> {
     }
 
     @Override
-    public boolean atualizar(CartaoCredito cartaoCredito) {
+    public boolean atualizar(CartaoCredito old, CartaoCredito novo) {
         return false;
     }
 

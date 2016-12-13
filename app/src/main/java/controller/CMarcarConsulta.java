@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Dao.ConsultaDAO;
+import Dao.ItemConsultaDAO;
 import model.Consulta;
+import model.ItemConsulta;
 import model.Observado;
 import model.Observador;
 
@@ -14,7 +16,8 @@ import model.Observador;
 
 public class CMarcarConsulta implements Observado {
 
-    ConsultaDAO dao = new ConsultaDAO();
+    ConsultaDAO dao;
+    ItemConsultaDAO daoItem;
 
     private List<Observador> observadores;
     private List<Consulta> consultas;
@@ -23,6 +26,8 @@ public class CMarcarConsulta implements Observado {
     public CMarcarConsulta(){
         observadores = new ArrayList<>();
         consultas = new ArrayList<>();
+        dao = new ConsultaDAO();
+        daoItem = new ItemConsultaDAO();
     }
 
     /*public void marcar(Consulta c){
@@ -53,6 +58,18 @@ public class CMarcarConsulta implements Observado {
             this.consultas.add(c);
             this.notifica();
 
+            return true;
+        }
+
+        return false;
+    }
+    public boolean atualizarStatus(){
+        return false;
+    }
+    public boolean marcarConsulta(ItemConsulta itemC){
+
+        if(daoItem.inserir(itemC)) {
+            notifica();
             return true;
         }
 

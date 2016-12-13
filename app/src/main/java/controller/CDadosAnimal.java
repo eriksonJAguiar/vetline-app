@@ -18,7 +18,7 @@ public class CDadosAnimal {
 
     public boolean editaDadosAnimal(Animal a){ // atualiza no banco os dados do animal
 
-        dao.atualizar(a);
+        //dao.atualizar(a);
 
         return false;
     }

@@ -1,20 +1,23 @@
 package controller;
 
-import Dao.AlergiaDao;
+import Dao.AlergiaDAO;
+import Dao.AnimalAlegiaDAO;
 import model.Alergia;
+import model.AnimalAlergia;
 
 /**
  * Created by UltronI7 on 11/12/2016.
  */
 
 public class CCadastrarAlergia {
-    AlergiaDao dao = new AlergiaDao();
+    AnimalAlegiaDAO dao = new AnimalAlegiaDAO();
 
-    public boolean inserirAlergia(Alergia al){
+    public boolean CadastrarAlergia(AnimalAlergia al){
 
-        dao.inserir(al);
+        if(dao.inserir(al))
+            return true;
 
-        return true;
+        return false;
     }
 
 }

@@ -36,7 +36,7 @@ public class Tela_cadastrar_alergia extends AppCompatActivity {
                 al.setAlergia(alergia.getText().toString());
                 al.setDescricao(alergia.getText().toString());
 
-                cCadastrarAlergia.inserirAlergia(al);
+                //cCadastrarAlergia.inserirAlergia(al);
 
             }
         });

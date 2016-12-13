@@ -1,6 +1,6 @@
 package controller;
 
-import Dao.ClienteDao;
+
 import Dao.UsuarioDAO;
 import model.Cliente;
 import model.Usuario;
@@ -12,7 +12,7 @@ import model.Usuario;
 public class CRedefinirSenha {
 
     UsuarioDAO dao = new UsuarioDAO();
-    Usuario a1 = new Usuario();
+    Usuario a1 = Usuario.getInstance();
 
     public Usuario buscaUsuario(Usuario a){
 
@@ -25,7 +25,7 @@ public class CRedefinirSenha {
 
         a2.setSenha(novaSenha);
 
-        dao.atualizar(a2);
+        //dao.atualizar(a2);
 
         return false;
     }

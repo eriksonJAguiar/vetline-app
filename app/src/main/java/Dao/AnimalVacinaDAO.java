@@ -12,7 +12,7 @@ import model.AnimalVacina;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class AnimalVacinaDAO implements GenericDAO<AnimalVacina> {
+public class AnimalVacinaDAO implements GenericDao<AnimalVacina> {
 
     private DB jdb;
     private Jongo jongo;
@@ -37,7 +37,7 @@ public class AnimalVacinaDAO implements GenericDAO<AnimalVacina> {
     }
 
     @Override
-    public boolean atualizar(AnimalVacina animalVacina) {
+    public boolean atualizar(AnimalVacina old, AnimalVacina novo) {
         return false;
     }
 

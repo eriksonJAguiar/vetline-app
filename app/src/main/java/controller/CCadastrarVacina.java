@@ -1,6 +1,9 @@
 package controller;
 
+import Dao.AnimalVacinaDAO;
 import Dao.VacinaDAO;
+import model.Animal;
+import model.AnimalVacina;
 import model.Vacina;
 
 /**
@@ -8,13 +11,14 @@ import model.Vacina;
  */
 
 public class CCadastrarVacina {
-    VacinaDAO dao = new VacinaDAO();
+    AnimalVacinaDAO dao = new AnimalVacinaDAO();
 
-    public boolean inserirVacina(Vacina val){
+    public boolean CadastrarVacina(AnimalVacina val){
 
-        dao.inserir(val);
+        if(dao.inserir(val))
+            return true;
 
-        return true;
+        return false;
     }
 
 }

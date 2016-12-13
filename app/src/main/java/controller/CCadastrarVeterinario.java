@@ -2,6 +2,8 @@ package controller;
 
 import android.os.Build;
 
+import java.util.ArrayList;
+
 import Dao.VeterinarioDAO;
 import model.Veterinario;
 
@@ -15,23 +17,30 @@ public class CCadastrarVeterinario {
 
     public boolean cadastrarVeterinario(Veterinario vet){
 
-        dao.inserir(vet);
+        if(dao.inserir(vet))
+            return true;
 
-        return true;
+        return false;
     }
 
     public Veterinario buscaVeterinario(Veterinario vet){
 
-        return vet;
+        return dao.buscar(vet);
     }
 
-    public boolean atualizaVeterinario(Veterinario vet){
+    public boolean atualizaVeterinario(Veterinario old, Veterinario novo){
 
-        return true;
+        if(dao.atualizar(old,novo))
+            return true;
+
+        return false;
     }
 
     public boolean excluiVeterinario(Veterinario vet){
 
-     return true;
+        if(dao.excluir(vet))
+            return false;
+
+        return false;
     }
 }

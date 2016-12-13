@@ -16,16 +16,16 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_01_light.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_05_dark.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_05_dark.png"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_05_dark.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_05_dark.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
@@ -80,12 +80,12 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/quantum_ic_pause_circle_filled_white_36.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_04_dark.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_04_dark.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_plusone_standard_off_client.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-xhdpi-v4/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_04_dark.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_04_dark.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
@@ -124,12 +124,12 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/res/drawable-xhdpi-v4/cast_ic_notification_1.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_19_light.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_connecting_19_light.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_19_light.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_connecting_19_light.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/quantum_ic_replay_30_grey600_36.png",
@@ -252,28 +252,28 @@
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_15_dark.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_10_light.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_10_light.png"
-    },
-    {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_10_light.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_10_light.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_plusone_medium_off_client.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-xhdpi-v4/ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_00_light.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_00_light.png"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_17_dark.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_connecting_17_dark.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/quantum_ic_forward_10_white_24.png",
         "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/quantum_ic_forward_10_white_24.png"
     },
     {
-        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_17_dark.png",
-        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_connecting_17_dark.png"
+        "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_00_light.png",
+        "source": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_00_light.png"
     },
     {
         "merged": "/root/AndroidStudioProjects/vetline-app/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",

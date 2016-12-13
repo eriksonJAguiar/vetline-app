@@ -12,7 +12,7 @@ import model.Vacina;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class VacinaDAO implements GenericDAO<Vacina> {
+public class VacinaDAO implements GenericDao<Vacina> {
     private DB jdb;
     private Jongo jongo;
     private MongoCollection collection;
@@ -37,9 +37,10 @@ public class VacinaDAO implements GenericDAO<Vacina> {
     }
 
     @Override
-    public boolean atualizar(Vacina vacina) {
+    public boolean atualizar(Vacina old, Vacina novo) {
         return false;
     }
+
 
     @Override
     public boolean excluir(Vacina vacina) {

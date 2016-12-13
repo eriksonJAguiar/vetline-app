@@ -24,6 +24,9 @@ public class Animal {
     private String tamanho ;
     private String genero;
 
+    @Reference
+    private String dono;
+
 
     public Animal(){
         nome = "";
@@ -72,5 +75,13 @@ public class Animal {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public String getDono() {
+        return dono;
+    }
+
+    public void setDono(String dono) {
+        this.dono = dono;
     }
 }

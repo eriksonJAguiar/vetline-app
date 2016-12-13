@@ -1,10 +1,18 @@
 package model;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+
 /**
  * Created by root on 05/12/16.
  */
 
+@Entity(value = "hospitaisVeterinarios")
 public class HospitalVeterinario {
+
+    @Id
+    private ObjectId _id;
 
     private String nome;
     private int crmv;

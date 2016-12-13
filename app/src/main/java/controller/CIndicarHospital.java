@@ -11,9 +11,10 @@ public class CIndicarHospital {
 
     HospitalVeterinarioDAO dao = new HospitalVeterinarioDAO();
 
-    public boolean FazerIndicaçãoHospital(HospitalVeterinario hv){
+    public boolean indicarHospitalVet(HospitalVeterinario hv){
 
-        dao.inserir(hv);
+        if(dao.inserir(hv))
+            return true;
 
         return false;
     }

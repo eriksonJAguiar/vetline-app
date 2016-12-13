@@ -13,7 +13,8 @@ public class CCadastrarAnimal {
 
     public boolean CadastrarAnimal(Animal a) { // conectar com o banco para cadatrar um novo animal
 
-        dao.inserir(a);
+        if(dao.inserir(a))
+            return true;
 
         return false;
     }

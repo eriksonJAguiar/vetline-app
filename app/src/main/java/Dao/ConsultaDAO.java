@@ -12,7 +12,7 @@ import model.Consulta;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class ConsultaDAO implements GenericDAO<Consulta> {
+public class ConsultaDAO implements GenericDao<Consulta> {
 
     private DB jdb;
     private Jongo jongo;
@@ -38,7 +38,7 @@ public class ConsultaDAO implements GenericDAO<Consulta> {
     }
 
     @Override
-    public boolean atualizar(Consulta consulta) {
+    public boolean atualizar(Consulta old, Consulta novo) {
         return false;
     }
 

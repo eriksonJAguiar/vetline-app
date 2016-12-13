@@ -11,12 +11,12 @@ public class Usuario {
 
     private static Usuario novo = null;
 
-    public Usuario(){
+    private Usuario(){
         login = "";
         senha = "";
     }
 
-    public Usuario getInstance(){
+    public static Usuario getInstance(){
         if(novo == null){
             return new Usuario();
         }
@@ -40,11 +40,4 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public static Usuario getNovo() {
-        return novo;
-    }
-
-    public static void setNovo(Usuario novo) {
-        Usuario.novo = novo;
-    }
 }

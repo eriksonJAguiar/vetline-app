@@ -3,7 +3,8 @@ package controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import Dao.ClienteDao;
+
+import Dao.ClienteDAO;
 import Dao.UsuarioDAO;
 import model.Cliente;
 import model.Usuario;
@@ -14,7 +15,7 @@ import model.Usuario;
 
 public class CCadastrarCliente {
 
-    ClienteDao dao = new ClienteDao();
+    ClienteDAO dao = new ClienteDAO();
 
     public boolean cadastrarCliente(Cliente c){
 

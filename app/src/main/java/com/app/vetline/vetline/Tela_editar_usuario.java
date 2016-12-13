@@ -14,7 +14,9 @@ import android.widget.TextView;
 
 import controller.CCadastrarCliente;
 import controller.CCadastrarVeterinario;
+import controller.CPesquisarVeterinario;
 import model.Cliente;
+import model.Usuario;
 import model.Veterinario;
 
 /**
@@ -38,12 +40,13 @@ public class Tela_editar_usuario extends AppCompatActivity {
 
         Cliente cliente = new Cliente(); // recebe o cliente da tela passada
         Veterinario veterinario = new Veterinario(); // recebe o veterinario da tela passada
+        final Usuario us = Usuario.getInstance();
 
         final CCadastrarCliente cCadastrarCliente = new CCadastrarCliente();
-        final CCadastrarVeterinario cCadastrarVeterinario = new CCadastrarVeterinario();
+        final CPesquisarVeterinario cPesquisarVeterinario = new CPesquisarVeterinario();
 
         Cliente clienteEditar = cCadastrarCliente.buscarCliente(cliente);
-        Veterinario veterinarioEditar = cCadastrarVeterinario.buscaVeterinario(veterinario);
+        Veterinario veterinarioEditar = cPesquisarVeterinario.pesquisarVeterinario(veterinario);
 
         EditText nomeUsuario = (EditText) findViewById(R.id.campo_nomeUsuarioCompletoEditar);
         EditText emailUsuario = (EditText) findViewById(R.id.campo_emailEditar);
@@ -216,7 +219,10 @@ public class Tela_editar_usuario extends AppCompatActivity {
                         }
 
                         CCadastrarVeterinario CCadastrarVeterinario = new CCadastrarVeterinario();
-                        if (CCadastrarVeterinario.atualizaVeterinario(vet)) {
+                        Veterinario antigo = new Veterinario();
+                        antigo.setLogin(us.getLogin());
+                        antigo.setSenha(us.getSenha());
+                        if (CCadastrarVeterinario.atualizaVeterinario(antigo,vet)) {
                             final LinearLayout camposVet2 = (LinearLayout) findViewById(R.id.mensagens);
                             camposVet2.setVisibility(View.VISIBLE);
                             camposVet2.setBackgroundResource(R.drawable.screen_border_sucesso);

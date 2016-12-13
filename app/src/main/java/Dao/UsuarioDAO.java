@@ -12,7 +12,7 @@ import model.Usuario;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class UsuarioDAO  implements GenericDAO<Usuario> {
+public class UsuarioDAO  implements GenericDao<Usuario> {
 
     private DB jdb;
     private Jongo jongo;
@@ -37,7 +37,7 @@ public class UsuarioDAO  implements GenericDAO<Usuario> {
     }
 
     @Override
-    public boolean atualizar(Usuario usuario) {
+    public boolean atualizar(Usuario old, Usuario novo) {
         return false;
     }
 

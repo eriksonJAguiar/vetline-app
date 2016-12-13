@@ -2,19 +2,25 @@ package Dao;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mongodb.Cursor;
 import com.mongodb.DB;
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
+import org.jongo.MongoCursor;
 
+import java.util.ArrayList;
+
+import model.Animal;
 import model.Veterinario;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class VeterinarioDAO implements GenericDAO<Veterinario> {
+public class VeterinarioDAO implements GenericDao<Veterinario> {
     private DB jdb;
     private Jongo jongo;
     private MongoCollection collection;
@@ -24,46 +30,76 @@ public class VeterinarioDAO implements GenericDAO<Veterinario> {
 
         jdb = new MongoClient().getDB("vetline");
         jongo = new Jongo(jdb);
-        collection = jongo.getCollection("veterinarioa");
+        collection = jongo.getCollection("veterinarios");
     }
 
     @Override
     public boolean inserir(Veterinario veterinario) {
 
         try{
-/*
-            FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference myRef = database.getReference();
+            collection.insert(veterinario);
 
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("nome").setValue(veterinario.getNome());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("agencia").setValue(veterinario.getAgencia());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("crmv").setValue(veterinario.getCrmv());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("email").setValue(veterinario.getEmail());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("banco").setValue(veterinario.getBanco());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("especialidade").setValue(veterinario.getEspecialidade());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("numero_conta").setValue(veterinario.getNumConta());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("senha").setValue(veterinario.getSenha());
-            myRef.child("Veterinarios").child(veterinario.getLogin()).child("operacao").setValue(veterinario.getOperacao());
-            return true;*/
-                collection.insert(veterinario);
-        return true;
+            return true;
         }catch (Exception e){
             return false;
         }
     }
 
     @Override
-    public boolean atualizar(Veterinario veterinario) {
-        return false;
+    public boolean atualizar(Veterinario old, Veterinario novo) {
+
+       try {
+           collection.update("{login: #}",old.getLogin()).with(novo);
+           return true;
+       }catch (Exception e){
+           e.printStackTrace();
+           return false;
+       }
     }
 
     @Override
     public boolean excluir(Veterinario veterinario) {
-        return false;
+
+        try {
+
+            collection.remove("{login: #}",veterinario.getLogin());
+
+            return true;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
     public Veterinario buscar(Veterinario veterinario) {
-        return null;
+
+        try{
+            Veterinario v = collection.findOne("{login: #}",veterinario.getCrmv()).as(Veterinario.class);
+
+            return v;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public ArrayList<Veterinario> buscarPorCidade(String localidade){
+        try{
+            MongoCursor<Veterinario> v = collection.find("{cidade: #}",localidade).as(Veterinario.class);
+
+            ArrayList<Veterinario> vList = new ArrayList<>();
+
+            for(Veterinario vet:v){
+                vList.add(vet);
+            }
+
+            return vList;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

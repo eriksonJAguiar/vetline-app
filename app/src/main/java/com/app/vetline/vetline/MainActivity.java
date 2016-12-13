@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btn_logar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Usuario user = new Usuario();
+                Usuario user = Usuario.getInstance();
                 CFazerLogin login = new CFazerLogin();
 
                 user.setLogin(campo_usuario1.getText().toString());

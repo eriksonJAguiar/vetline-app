@@ -5,14 +5,18 @@ import com.mongodb.MongoClient;
 
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
+import org.jongo.MongoCursor;
 
+import java.util.ArrayList;
+
+import model.Cliente;
 import model.HospitalVeterinario;
 
 /**
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class HospitalVeterinarioDAO implements GenericDAO<HospitalVeterinario> {
+public class HospitalVeterinarioDAO implements GenericDao<HospitalVeterinario> {
 
     private DB jdb;
     private Jongo jongo;
@@ -23,7 +27,7 @@ public class HospitalVeterinarioDAO implements GenericDAO<HospitalVeterinario> {
 
         jdb = new MongoClient().getDB("vetline");
         jongo = new Jongo(jdb);
-        collection = jongo.getCollection("hospital_veterinario");
+        collection = jongo.getCollection("hospitaisVeterinarios");
     }
     @Override
     public boolean inserir(HospitalVeterinario hospitalVeterinario) {
@@ -36,9 +40,10 @@ public class HospitalVeterinarioDAO implements GenericDAO<HospitalVeterinario> {
     }
 
     @Override
-    public boolean atualizar(HospitalVeterinario hospitalVeterinario) {
+    public boolean atualizar(HospitalVeterinario old, HospitalVeterinario novo) {
         return false;
     }
+
 
     @Override
     public boolean excluir(HospitalVeterinario hospitalVeterinario) {
@@ -48,5 +53,24 @@ public class HospitalVeterinarioDAO implements GenericDAO<HospitalVeterinario> {
     @Override
     public HospitalVeterinario buscar(HospitalVeterinario hospitalVeterinario) {
         return null;
+    }
+    public ArrayList<HospitalVeterinario> buscarPorCidade(HospitalVeterinario hospitalVeterinario){
+
+        try{
+
+            MongoCursor<HospitalVeterinario> cursor =  collection.find("{cidade: #}",hospitalVeterinario.getCidade()).as(HospitalVeterinario.class);
+            final ArrayList<HospitalVeterinario> array = new ArrayList<>();
+
+            for(HospitalVeterinario hv:cursor){
+
+                array.add(hv);
+            }
+
+            return array;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

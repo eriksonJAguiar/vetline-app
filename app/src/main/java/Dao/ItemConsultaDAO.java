@@ -12,7 +12,7 @@ import model.ItemConsulta;
  * Created by UltronI7 on 06/12/2016.
  */
 
-public class ItemConsultaDAO implements GenericDAO<ItemConsulta> {
+public class ItemConsultaDAO implements GenericDao<ItemConsulta> {
     private DB jdb;
     private Jongo jongo;
     private MongoCollection collection;
@@ -36,9 +36,10 @@ public class ItemConsultaDAO implements GenericDAO<ItemConsulta> {
     }
 
     @Override
-    public boolean atualizar(ItemConsulta itemConsulta) {
+    public boolean atualizar(ItemConsulta old, ItemConsulta novo) {
         return false;
     }
+
 
     @Override
     public boolean excluir(ItemConsulta itemConsulta) {

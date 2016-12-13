@@ -1,6 +1,6 @@
 package controller;
 
-import Dao.ClienteDao;
+import Dao.ClienteDAO;
 import Dao.UsuarioDAO;
 import model.Cliente;
 import model.Usuario;
@@ -11,7 +11,7 @@ import model.Usuario;
 
 public class CFazerLogin {
 
-    ClienteDao dao = new ClienteDao();
+    ClienteDAO dao = new ClienteDAO();
 
     public boolean fazerLogin(Usuario u){
         try {
