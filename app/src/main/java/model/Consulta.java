@@ -22,7 +22,6 @@ public class Consulta {
     private String local;
     private boolean status;
     private int classificacao;
-    private String tipoPagamento;
     private String diagnostico;
     private boolean realizada;
 
@@ -33,7 +32,6 @@ public class Consulta {
         local = "";
         status = false;
         classificacao = 0;
-        setTipoPagamento("");
         data = new Date();
         diagnostico = "";
         realizada = false;
@@ -79,15 +77,6 @@ public class Consulta {
 
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
-    }
-
-
-    public String getTipoPagamento() {
-        return tipoPagamento;
-    }
-
-    public void setTipoPagamento(String tipoPagamento) {
-        this.tipoPagamento = tipoPagamento;
     }
 
     public Date getData() {
